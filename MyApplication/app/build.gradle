@@ -35,5 +35,4 @@ dependencies {
     implementation 'com.google.vr:sdk-panowidget:1.180.0'
     implementation 'com.google.vr:sdk-base:1.180.0'
     implementation 'com.google.vr:sdk-audio:1.180.0'
-
 }
