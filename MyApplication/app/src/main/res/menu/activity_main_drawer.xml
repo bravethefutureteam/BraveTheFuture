@@ -42,7 +42,7 @@
             android:title="New Developments" />
         <item
             android:id="@+id/nav_Donate"
-            android:icon="@drawable/ic_monetization_on_black_24dp"
+            android:icon="@drawable/ic_money"
             android:title="Donate" />
     </group>
 
