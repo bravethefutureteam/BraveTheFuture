@@ -100,7 +100,7 @@
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/class"
+                        android:src="@drawable/class_image"
                         tools:layout_editor_absoluteX="0dp"
                         tools:layout_editor_absoluteY="374dp" />
 
