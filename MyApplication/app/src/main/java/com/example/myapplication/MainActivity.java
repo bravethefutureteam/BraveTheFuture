@@ -36,10 +36,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     public void switchScreen(View button){
         switch(button.getId()){
-            case R.id.nav_available:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.extracurriculars)).commit();
-                history.push(R.layout.extracurriculars);
-                break;
             case R.id.nav_bravethefuture:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_btf)).commit();
                 history.push(R.layout.individual_btf);
@@ -48,26 +44,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.calendaractivity)).commit();
                 //history.push(R.layout.calendaractivity);
                 break;
-            case R.id.nav_classrooms:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.classavailablility)).commit();
-                history.push(R.layout.classavailablility);
-                break;
-            case R.id.nav_councellors:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_mental)).commit();
-                history.push(R.layout.individual_mental);
-                break;
-            case R.id.nav_durham:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_durhamtransfer)).commit();
-                history.push(R.layout.individual_durhamtransfer);
-                break;
-            case R.id.nav_gears:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_gears)).commit();
-                history.push(R.layout.individual_gears);
-                break;
-            case R.id.nav_ignite:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_ignite)).commit();
-                history.push(R.layout.individual_ignite);
-                break;
+
             case R.id.nav_labs:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_labs)).commit();
                 history.push(R.layout.individual_labs);
@@ -92,33 +69,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Map()).commit();
 
                 break;
-            case R.id.nav_societyelections:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_soce)).commit();
-                history.push(R.layout.individual_soce);
-                break;
+
             case R.id.nav_software:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_soft)).commit();
                 history.push(R.layout.individual_soft);
                 break;
-            case R.id.nav_studentunion:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_usu)).commit();
-                history.push(R.layout.individual_usu);
-                break;
-            case R.id.nav_studentunionelections:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_usuelections)).commit();
-                history.push(R.layout.individual_usuelections);
-                break;
+
             case R.id.nav_tele:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_tele)).commit();
                 history.push(R.layout.individual_tele);
-                break;
-            case R.id.nav_transit:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_drt)).commit();
-                history.push(R.layout.individual_drt);
-                break;
-            case R.id.nav_upcoming:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.extracurriculars2)).commit();
-                history.push(R.layout.extracurriculars2);
                 break;
         }
     }
@@ -164,24 +123,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_Home:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.app_bar_main)).commit();
                 break;
-            case R.id.nav_ExtraCurriculars:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.extracurriculars)).commit();
-                break;
             case R.id.nav_TechFocus:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.techfocus)).commit();
-                break;
-            case R.id.nav_MentalHealth:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.mentalhealth)).commit();
-                break;
-            case R.id.nav_ConnectedCampus:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new ConnectedCampus()).commit();
                 break;
             case R.id.nav_Map:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Map()).commit();
                 break;
-            case R.id.nav_StudentLife:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.studentlife)).commit();
-                break;
+
             case R.id.nav_VirtualTour:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new VirtualTour()).commit();
                 break;
