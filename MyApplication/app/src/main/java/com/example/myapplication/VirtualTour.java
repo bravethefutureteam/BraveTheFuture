@@ -39,19 +39,19 @@ public class VirtualTour extends Fragment {
 
         AssetManager assetManager = getActivity().getAssets();
         try {
-            inputStream = assetManager.open("vrtest.jpg");
+            inputStream = assetManager.open("sirc.JPG");
             options.inputType = VrPanoramaView.Options.TYPE_MONO;
             mVRPanoramaView1.loadImageFromBitmap(BitmapFactory.decodeStream(inputStream), options);
             inputStream.close();
-            inputStream = assetManager.open("vrtest2.jpg");
+            inputStream = assetManager.open("vrtest.jpg");
             options.inputType = VrPanoramaView.Options.TYPE_MONO;
             mVRPanoramaView2.loadImageFromBitmap(BitmapFactory.decodeStream(inputStream), options);
             inputStream.close();
-            inputStream = assetManager.open("vrtest3.jpg");
+            inputStream = assetManager.open("vrtest.jpg");
             options.inputType = VrPanoramaView.Options.TYPE_MONO;
             mVRPanoramaView3.loadImageFromBitmap(BitmapFactory.decodeStream(inputStream), options);
             inputStream.close();
-            inputStream = assetManager.open("vrtest4.jpg");
+            inputStream = assetManager.open("vrtest.jpg");
             options.inputType = VrPanoramaView.Options.TYPE_MONO;
             mVRPanoramaView4.loadImageFromBitmap(BitmapFactory.decodeStream(inputStream), options);
             inputStream.close();
