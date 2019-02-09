@@ -18,6 +18,7 @@
             android:layout_marginEnd="96dp"
             android:layout_marginBottom="598dp"
             android:text="TextView"
+            android:textAlignment="center"
             android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -43,12 +44,104 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="29dp"
-            android:layout_marginEnd="113dp"
+            android:layout_marginEnd="104dp"
             android:layout_marginBottom="521dp"
             android:text="Upcoming"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/button"
             app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="200dp"
+            android:layout_height="117dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginBottom="30dp"
+            android:text="Placeholder 1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/button4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="204dp"
+            android:layout_height="116dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="30dp"
+            android:text="Placeholder 2"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/button5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button3" />
+
+        <Button
+            android:id="@+id/button5"
+            style="@android:style/Widget.Material.Light.Button.Toggle"
+            android:layout_width="196dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:text="Motorsports"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button4" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="190dp"
+            android:layout_height="133dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="31dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button4"
+            app:srcCompat="@drawable/vroomcar" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="187dp"
+            android:layout_height="137dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="34dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="34dp"
+            app:layout_constraintBottom_toTopOf="@+id/button5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button4"
+            app:layout_constraintTop_toBottomOf="@+id/button3"
+            app:srcCompat="@drawable/transition" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="190dp"
+            android:layout_height="137dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="25dp"
+            app:layout_constraintBottom_toTopOf="@+id/button4"
+            app:layout_constraintEnd_toStartOf="@+id/button3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button"
+            app:srcCompat="@drawable/bravethefuture_2lines_tagline" />
+
     </android.support.constraint.ConstraintLayout>
 </LinearLayout>
