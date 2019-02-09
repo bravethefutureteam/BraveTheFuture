@@ -185,6 +185,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_VirtualTour:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new VirtualTour()).commit();
                 break;
+            case R.id.nav_Developments:
+                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.newdevelopments)).commit();
+                break;
+            case R.id.nav_Donate:
+                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.Donate)).commit();
+                break;
         }
 
         drawer.closeDrawer(GravityCompat.START);
@@ -198,5 +204,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else {
             super.onBackPressed();
         }
+    }
+
+    public enum Page {
+        HOME, EXTRA_CURRICULARS, TECH_FOCUS, MENTAL_HEALTH, CONNECTED_CAMPUS, MAP, STUDENT_LIFE, VIRTUAL_TOUR, NEW_DEVELOPMENTS,
+        AVAILABLE, BRAVE_THE_FUTURE, CALENDAR, CLASS_AVAILABLE
     }
 }
