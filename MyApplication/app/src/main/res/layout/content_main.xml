@@ -20,7 +20,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/splash" />
+        app:srcCompat="@drawable/splash"
+        tools:srcCompat="@drawable/uoit_btf_duallogo" />
 
     <TextView
         android:id="@+id/textView"
@@ -31,7 +32,7 @@
         android:layout_marginEnd="26dp"
         android:layout_marginRight="26dp"
         android:text="Welcome to the Brave the Future App!"
-        android:textSize="22sp"
+        android:textSize="20sp"
         app:fontFamily="@font/franklin_gothic_medium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
