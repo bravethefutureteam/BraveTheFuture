@@ -103,7 +103,7 @@ public class Map extends Fragment implements OnMapReadyCallback {
         map.addMarker(new MarkerOptions().position(new LatLng(43.945733, -78.898948)).title("ACE (Automotive Center of Excellence)"));
         map.setMapType(GoogleMap.MAP_TYPE_HYBRID);
         map.setTrafficEnabled(true);
-        map.moveCamera(CameraUpdateFactory.newLatLngZoom((uoitLocation),20));
+        map.moveCamera(CameraUpdateFactory.newLatLngZoom((uoitLocation),16));
 
         if (ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             return;
