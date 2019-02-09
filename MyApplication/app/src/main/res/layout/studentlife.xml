@@ -27,7 +27,7 @@
             tools:text="Extra-curriculars" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/nav_available"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="104dp"
@@ -35,12 +35,12 @@
             android:layout_marginBottom="521dp"
             android:text="Available"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/button2"
+            app:layout_constraintEnd_toStartOf="@+id/nav_upcoming"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/nav_upcoming"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="29dp"
@@ -49,7 +49,7 @@
             android:text="Upcoming"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/button"
+            app:layout_constraintStart_toEndOf="@+id/nav_available"
             app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
         <Button
@@ -78,14 +78,14 @@
             android:text="Placeholder 2"
             android:textAppearance="@style/TextAppearance.AppCompat.Display2"
             android:textSize="30sp"
-            app:layout_constraintBottom_toTopOf="@+id/button5"
+            app:layout_constraintBottom_toTopOf="@+id/text1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/nav_studentunion" />
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/text1"
             style="@android:style/Widget.Material.Light.Button.Toggle"
             android:layout_width="196dp"
             android:layout_height="120dp"
@@ -110,7 +110,7 @@
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="14dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/button5"
+            app:layout_constraintEnd_toStartOf="@+id/text1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/nav_ri3d"
             app:srcCompat="@drawable/vroomcar" />
@@ -123,7 +123,7 @@
             android:layout_marginTop="34dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="34dp"
-            app:layout_constraintBottom_toTopOf="@+id/button5"
+            app:layout_constraintBottom_toTopOf="@+id/text1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/nav_ri3d"
             app:layout_constraintTop_toBottomOf="@+id/nav_studentunion"
@@ -140,7 +140,7 @@
             app:layout_constraintBottom_toTopOf="@+id/nav_ri3d"
             app:layout_constraintEnd_toStartOf="@+id/nav_studentunion"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button"
+            app:layout_constraintTop_toBottomOf="@+id/nav_available"
             app:srcCompat="@drawable/bravethefuture_2lines_tagline" />
 
     </android.support.constraint.ConstraintLayout>
