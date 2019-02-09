@@ -10,8 +10,8 @@
 
 
     <android.support.constraint.ConstraintLayout
-        android:layout_width="426dp"
-        android:layout_height="670dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:background="#ffffff">
 
         <ImageView
