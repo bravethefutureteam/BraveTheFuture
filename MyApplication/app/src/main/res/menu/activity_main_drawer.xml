@@ -9,13 +9,21 @@
             android:icon="@drawable/ic_home_black_24dp"
             android:title="Home" />
         <item
+            android:id="@+id/nav_StudentLife"
+            android:icon="@drawable/ic_school_black_24dp"
+            android:title="Brilliant Young Minds" />
+        <item
+            android:id="@+id/nav_Talent"
+            android:icon="@drawable/ic_spa_black_24dp"
+            android:title="World Class Talent" />
+        <item
             android:id="@+id/nav_TechFocus"
             android:icon="@drawable/ic_code_black_24dp"
-            android:title="Tech Focus" />
+            android:title="High-tech Facilities" />
         <item
-            android:id="@+id/nav_StudentLife"
-            android:icon="@drawable/ic_accessibility_black_24dp"
-            android:title="Student Life" />
+            android:id="@+id/nav_Research"
+            android:icon="@drawable/ic_timeline_black_24dp"
+            android:title="One-of-a-kind Research" />
         <item
             android:id="@+id/nav_Map"
             android:icon="@drawable/ic_map_black_24dp"
@@ -24,18 +32,7 @@
             android:id="@+id/nav_VirtualTour"
             android:icon="@drawable/ic_camera_enhance_black_24dp"
             android:title="Virtual Tour" />
-        <item
-            android:id="@+id/nav_MentalHealth"
-            android:icon="@drawable/ic_healing_black_24dp"
-            android:title="Mental Health" />
-        <item
-            android:id="@+id/nav_ExtraCurriculars"
-            android:icon="@drawable/ic_spa_black_24dp"
-            android:title="Extra-Curriculars" />
-        <item
-            android:id="@+id/nav_ConnectedCampus"
-            android:icon="@drawable/ic_wifi_tethering_black_24dp"
-            android:title="Connected Campus" />
+
         <item
             android:id="@+id/nav_Developments"
             android:icon="@drawable/ic_build_black_24dp"
