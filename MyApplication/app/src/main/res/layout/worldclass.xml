@@ -120,11 +120,11 @@
                         tools:layout_editor_absoluteY="332dp" />
 
                 </LinearLayout>
-               
+
             </LinearLayout>
 
         </ScrollView>
 
     </android.support.constraint.ConstraintLayout>
 
-</LinearLayout>intLayout>
+</LinearLayout>
