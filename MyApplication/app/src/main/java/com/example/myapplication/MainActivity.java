@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.app.Activity;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -39,9 +40,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toggle.syncState();
 
          playButton = (Button) findViewById(R.id.playButton);
-         videoview = (VideoView) findViewById(R.id.videoView);
+         videoview = (VideoView) findViewById(R.id.videoview);
          mediaController = new MediaController(this);
-
 
         if (savedInstanceState == null) {
            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Home()).commit();
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
        }
     }
 
-    public void videoview(View v){
+    public void playVideo(View v){
         mediaController.setAnchorView(videoview);
         videoview.setMediaController(mediaController);
         videoview.setKeepScreenOn(true);
