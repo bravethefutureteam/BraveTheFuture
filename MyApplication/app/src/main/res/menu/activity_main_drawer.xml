@@ -14,7 +14,7 @@
             android:title="Brilliant Young Minds" />
         <item
             android:id="@+id/nav_Talent"
-            android:icon="@drawable/ic_spa_black_24dp"
+            android:icon="@drawable/ic_language_black_24dp"
             android:title="World Class Talent" />
         <item
             android:id="@+id/nav_TechFocus"
