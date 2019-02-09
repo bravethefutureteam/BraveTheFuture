@@ -29,16 +29,26 @@
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginBottom="521dp"
             android:text="Available"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="71dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="113dp"
+            android:layout_marginBottom="521dp"
             android:text="Upcoming"
-            tools:layout_editor_absoluteX="367dp"
-            tools:layout_editor_absoluteY="71dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
     </android.support.constraint.ConstraintLayout>
 </LinearLayout>
