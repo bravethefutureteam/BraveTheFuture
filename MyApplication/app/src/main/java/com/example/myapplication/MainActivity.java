@@ -40,30 +40,47 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item){
+
         switch (item.getItemId()){
             case R.id.nav_Home:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Home()).commit();
+                NavigationView navigationView = findViewById(R.id.nav_Home)
+                navigationView.setCheckedItem(R.id.nav_Home);
                 break;
             case R.id.nav_Information:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Information()).commit();
+                NavigationView navigationView = findViewById(R.id.nav_Home)
+                navigationView.setCheckedItem(R.id.nav_Home);
                 break;
             case R.id.nav_ExtraCurriculars:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new ExtraCurriculars()).commit();
+                NavigationView navigationView = findViewById(R.id.nav_Home)
+                navigationView.setCheckedItem(R.id.nav_Home);
                 break;
             case R.id.nav_TechFocus:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new TechFocus()).commit();
+                NavigationView navigationView = findViewById(R.id.nav_Home)
+                navigationView.setCheckedItem(R.id.nav_Home);
                 break;
             case R.id.nav_MentalHealth:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new MentalHealth()).commit();
+                NavigationView navigationView = findViewById(R.id.nav_Home)
+                navigationView.setCheckedItem(R.id.nav_Home);
                 break;
             case R.id.nav_ConnectedCampus:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new ConnectedCampus()).commit();
+                NavigationView navigationView = findViewById(R.id.nav_ConnectedCampus)
+                navigationView.setCheckedItem(R.id.nav_ConnectedCampus);
                 break;
             case R.id.nav_StudentLife:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new StudentLife()).commit();
+                NavigationView navigationView = findViewById(R.id.nav_StudentLife)
+                navigationView.setCheckedItem(R.id.nav_StudentLife);
                 break;
             case R.id.nav_VirtualTour:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new VirtualTour()).commit();
+                NavigationView navigationView = findViewById(R.id.nav_VirtualTour)
+                navigationView.setCheckedItem(R.id.nav_VirtualTour);
                 break;
         }
 
