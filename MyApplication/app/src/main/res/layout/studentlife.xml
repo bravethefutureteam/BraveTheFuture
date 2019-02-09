@@ -45,6 +45,7 @@
                         android:layout_marginLeft="25dp"
                         android:scaleType="fitCenter"
                         android:src="@drawable/map"
+                        android:onClick="switchScreen"
                         tools:layout_editor_absoluteX="200dp"
                         tools:layout_editor_absoluteY="0dp" />
 
@@ -74,6 +75,7 @@
                         android:layout_marginLeft="28dp"
                         android:text="Calendar of Upcoming Events"
                         android:textSize="18sp"
+                        android:onClick="switchScreen"
                         tools:layout_editor_absoluteX="100dp"
                         tools:layout_editor_absoluteY="332dp" />
 
@@ -84,6 +86,7 @@
                         android:layout_marginLeft="25dp"
                         android:scaleType="fitCenter"
                         android:src="@drawable/calendar"
+                        android:onClick="switchScreen"
                         tools:layout_editor_absoluteX="200dp"
                         tools:layout_editor_absoluteY="0dp" />
 
@@ -101,6 +104,7 @@
                         android:layout_marginLeft="25dp"
                         android:scaleType="fitCenter"
                         android:src="@drawable/class_image"
+                        android:onClick="switchScreen"
                         tools:layout_editor_absoluteX="0dp"
                         tools:layout_editor_absoluteY="374dp" />
 
