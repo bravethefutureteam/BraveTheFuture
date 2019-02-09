@@ -101,6 +101,10 @@ public class Map extends Fragment implements OnMapReadyCallback {
         map.addMarker(new MarkerOptions().position(new LatLng(43.945849, -78.897137)).title("Library"));
         map.addMarker(new MarkerOptions().position(new LatLng(43.948151, -78.899089)).title("SIRC (Software Research Center)"));
         map.addMarker(new MarkerOptions().position(new LatLng(43.945733, -78.898948)).title("ACE (Automotive Center of Excellence)"));
+        map.addMarker(new MarkerOptions().position(new LatLng(43.950666, -78.898297)).title("Campus Ice Center"));
+        map.addMarker(new MarkerOptions().position(new LatLng(43.942169, -78.897137)).title("South Village Residence"));
+        map.addMarker(new MarkerOptions().position(new LatLng(43.944394, -78.892161)).title("Simcoe Village Residence"));
+        map.addMarker(new MarkerOptions().position(new LatLng(43.944228, -78.898755)).title("CRWC (Campus Recreation and Wellness Center)"));
         map.setMapType(GoogleMap.MAP_TYPE_HYBRID);
         map.setTrafficEnabled(true);
         map.moveCamera(CameraUpdateFactory.newLatLngZoom((uoitLocation),16));
