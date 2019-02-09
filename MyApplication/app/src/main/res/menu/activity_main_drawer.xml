@@ -3,11 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
+    <group android:checkableBehavior="single" android:id="@+id/menu_top">
         <item
             android:id="@+id/nav_Home"
             android:icon="@drawable/ic_home_black_24dp"
             android:title="Home" />
+        <item
+            android:id="@+id/nav_Information"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Information" />
+    </group>
+    <group android:checkableBehavior="none" android:id="@+id/menu_bottom">
         <item
             android:id="@+id/nav_ExtraCurriculars"
             android:icon="@drawable/ic_menu_camera"
@@ -32,10 +38,7 @@
             android:id="@+id/nav_VirtualTour"
             android:icon="@drawable/ic_menu_manage"
             android:title="Virtual Tour" />
-        <item
-            android:id="@+id/nav_Information"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Information" />
+
     </group>
 
 </menu>
