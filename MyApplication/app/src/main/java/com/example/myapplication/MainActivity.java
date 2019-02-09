@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_sami)).commit();
                 break;
             case R.id.nav_schoolmap:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.map)).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Map()).commit();
                 break;
             case R.id.nav_societyelections:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_soce)).commit();
@@ -144,8 +144,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_ConnectedCampus:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new ConnectedCampus()).commit();
                 break;
+            case R.id.nav_Map:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Map()).commit();
+                break;
             case R.id.nav_StudentLife:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new StudentLife()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.studentlife)).commit();
                 break;
             case R.id.nav_VirtualTour:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new VirtualTour()).commit();

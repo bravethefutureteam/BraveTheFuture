@@ -31,7 +31,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 
 import static android.support.constraint.Constraints.TAG;
 
-public class StudentLife extends Fragment implements OnMapReadyCallback {
+public class Map extends Fragment implements OnMapReadyCallback {
 
     private MapView mMapView;
     private boolean userLocationPermissionGranted = false;
