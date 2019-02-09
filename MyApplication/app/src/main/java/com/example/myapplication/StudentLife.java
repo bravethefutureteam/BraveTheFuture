@@ -47,7 +47,7 @@ public class StudentLife extends Fragment implements OnMapReadyCallback {
         if (!checkMapServices() || !userLocationPermissionGranted) {
             getLocationPermission();
         }
-        View view = inflater.inflate(R.layout.Map, container, false);
+        View view = inflater.inflate(R.layout.studentlife, container, false);
         mMapView = (MapView) view.findViewById(R.id.mapView);
         Bundle mapViewBundle = null;
         if (savedInstanceState != null) {
