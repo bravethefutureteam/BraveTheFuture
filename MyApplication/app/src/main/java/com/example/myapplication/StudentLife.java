@@ -92,7 +92,14 @@ public class StudentLife extends Fragment implements OnMapReadyCallback {
 
     @Override
     public void onMapReady(GoogleMap map) {
-        map.addMarker(new MarkerOptions().position(new LatLng(0, 0)).title("Marker"));
+        map.addMarker(new MarkerOptions().position(new LatLng(43.944597, -78.896483)).title("UA (Science Building)"));
+        map.addMarker(new MarkerOptions().position(new LatLng(43.945161, -78.896107)).title("UB (Business and IT Building)"));
+        map.addMarker(new MarkerOptions().position(new LatLng(43.945694, -78.896333)).title("ERC (Energy and Nuclear Building)"));
+        map.addMarker(new MarkerOptions().position(new LatLng(43.945849, -78.897137)).title("Library"));
+        map.addMarker(new MarkerOptions().position(new LatLng(43.948151, -78.899089)).title("SIRC (Software Research Center)"));
+        map.addMarker(new MarkerOptions().position(new LatLng(43.945733, -78.898948)).title("ACE (Automotive Center of Excellence)"));
+        map.setMapType(GoogleMap.MAP_TYPE_HYBRID);
+
         if (ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             return;
         }

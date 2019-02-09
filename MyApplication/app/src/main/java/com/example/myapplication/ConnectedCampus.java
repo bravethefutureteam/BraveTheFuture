@@ -31,7 +31,7 @@ public class ConnectedCampus extends Fragment {
 
         AssetManager assetManager = getActivity().getAssets();
         try {
-            inputStream = assetManager.open("vrtest.jpg");
+            inputStream = assetManager.open("polonsky.jpg");
             options.inputType = VrPanoramaView.Options.TYPE_MONO;
             mVRPanoramaView1.loadImageFromBitmap(BitmapFactory.decodeStream(inputStream), options);
             inputStream.close();
