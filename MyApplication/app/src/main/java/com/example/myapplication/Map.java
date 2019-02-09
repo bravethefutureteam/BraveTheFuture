@@ -105,6 +105,7 @@ public class Map extends Fragment implements OnMapReadyCallback {
         map.addMarker(new MarkerOptions().position(new LatLng(43.942169, -78.897137)).title("South Village Residence"));
         map.addMarker(new MarkerOptions().position(new LatLng(43.944394, -78.892161)).title("Simcoe Village Residence"));
         map.addMarker(new MarkerOptions().position(new LatLng(43.944228, -78.898755)).title("CRWC (Campus Recreation and Wellness Center)"));
+        map.addMarker(new MarkerOptions().position(new LatLng(43.943193, -78.898659)).title("UP (University Pavilion"));
         map.setMapType(GoogleMap.MAP_TYPE_HYBRID);
         map.setTrafficEnabled(true);
         map.moveCamera(CameraUpdateFactory.newLatLngZoom((uoitLocation),16));
