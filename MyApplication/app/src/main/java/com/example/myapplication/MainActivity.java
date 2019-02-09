@@ -37,10 +37,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public void switchScreen(View button){
         switch(button.getId()){
 
-            case R.id.nav_bravethefuture:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_btf)).commit();
-                history.push(R.layout.individual_btf);
-                break;
+            //case R.id.nav_bravethefuture:
+                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_btf)).commit();
+                //history.push(R.layout.individual_btf);
+                //break;
 
             case R.id.nav_durham:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_durhamtransfer)).commit();
@@ -51,26 +51,26 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_labs)).commit();
                 history.push(R.layout.individual_labs);
                 break;
-            case R.id.nav_motorsports:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_motorsports)).commit();
-                history.push(R.layout.individual_motorsports);
-                break;
-            case R.id.nav_pass:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_pass)).commit();
-                history.push(R.layout.individual_pass);
-                break;
-            case R.id.nav_ri3d:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_ri3d)).commit();
-                history.push(R.layout.individual_ri3d);
-                break;
-            case R.id.nav_sami:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_sami)).commit();
-                history.push(R.layout.individual_sami);
-                break;
-            case R.id.nav_schoolmap:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Map()).commit();
+            //case R.id.nav_motorsports:
+                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_motorsports)).commit();
+                //history.push(R.layout.individual_motorsports);
+                //break;
+            //case R.id.nav_pass:
+                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_pass)).commit();
+                //history.push(R.layout.individual_pass);
+                //break;
+            //case R.id.nav_ri3d:
+                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_ri3d)).commit();
+                //history.push(R.layout.individual_ri3d);
+                //break;
+            //case R.id.nav_sami:
+                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_sami)).commit();
+                //history.push(R.layout.individual_sami);
+                //break;
+            //case R.id.nav_schoolmap:
+                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Map()).commit();
 
-                break;
+                //break;
             case R.id.nav_software:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_soft)).commit();
                 history.push(R.layout.individual_soft);
