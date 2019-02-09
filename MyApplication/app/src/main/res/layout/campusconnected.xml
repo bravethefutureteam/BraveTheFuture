@@ -68,6 +68,7 @@
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
                         android:src="@drawable/ignite"
+                        android:onClick="switchScreen"
                         tools:layout_editor_absoluteX="200dp"
                         tools:layout_editor_absoluteY="0dp" />
 
@@ -107,6 +108,7 @@
                         android:layout_marginLeft="25dp"
                         android:scaleType="fitCenter"
                         android:src="@drawable/gearshat"
+                        android:onClick="switchScreen"
                         tools:layout_editor_absoluteX="200dp"
                         tools:layout_editor_absoluteY="0dp" />
 
@@ -124,6 +126,7 @@
                         android:layout_marginLeft="25dp"
                         android:scaleType="fitCenter"
                         android:src="@drawable/drts"
+                        android:onClick="switchScreen"
                         tools:layout_editor_absoluteX="0dp"
                         tools:layout_editor_absoluteY="374dp" />
 
@@ -164,6 +167,7 @@
                         android:layout_marginLeft="25dp"
                         android:scaleType="fitCenter"
                         android:src="@drawable/dcuoit"
+                        android:onClick="switchScreen"
                         tools:layout_editor_absoluteX="200dp"
                         tools:layout_editor_absoluteY="0dp" />
 
