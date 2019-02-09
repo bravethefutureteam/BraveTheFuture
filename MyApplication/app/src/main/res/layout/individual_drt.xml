@@ -11,7 +11,7 @@
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="640dp"
         android:background="#ffffff">
 
         <ImageView
@@ -52,7 +52,7 @@
             android:layout_marginStart="35dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="35dp"
-            android:text="The Universal Transit Pass (U-Pass) provides eligible students at participating colleges and universities unlimited travel on DRT and OneFare DRT-GO Transit routes. Perfect for commuting convenience for off-campus students."
+            android:text="@string/drt"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
