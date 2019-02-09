@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="344dp"
+            android:layout_height="242dp"
+            app:srcCompat="@drawable/vroomcar"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="109dp" />
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="221dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/franklin_gothic_medium"
+            android:text="Motorsports"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="95dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="340dp"
+            android:layout_height="324dp"
+            android:text="UOIT Motorsports was founded by a group of forward thinking individuals at the University of Ontario Institute of Technology in 2017. We are dedicated to researching and developing the future of automotive propulsion technologies, with the backing of our faculty and sponsors. We place value and emphasis on teamwork and efficiency as well as the art of knowledge transfer here at UOIT Motorsports."
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="37dp"
+            tools:layout_editor_absoluteY="377dp" />
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>
