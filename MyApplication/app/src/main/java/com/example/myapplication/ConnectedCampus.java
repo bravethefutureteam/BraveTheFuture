@@ -20,7 +20,7 @@ public class ConnectedCampus extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.virtual_tour, container, false);
+        View view = inflater.inflate(R.layout.campusconnected, container, false);
         mVRPanoramaView1 = (VrPanoramaView) view.findViewById(R.id.vrPanoramaViewTest1);
         loadPhotoSphere();
         return view;
