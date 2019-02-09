@@ -29,12 +29,12 @@
         android:layout_width="wrap_content"
         android:layout_height="42dp"
         android:layout_marginStart="25dp"
-        android:layout_marginLeft="25dp"
         android:layout_marginEnd="26dp"
-        android:layout_marginRight="26dp"
+        android:layout_marginBottom="10dp"
         android:text="Welcome to the Brave the Future App!"
         android:textSize="20sp"
         app:fontFamily="@font/franklin_gothic_medium"
+        app:layout_constraintBottom_toTopOf="@+id/videoview"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView6" />
@@ -42,9 +42,8 @@
     <VideoView
         android:id="@+id/videoview"
         android:layout_width="375dp"
-        android:layout_height="237dp"
+        android:layout_height="218dp"
         android:layout_marginStart="19dp"
-        android:layout_marginTop="30dp"
         android:layout_marginEnd="18dp"
         android:layout_marginBottom="30dp"
         app:layout_constraintBottom_toTopOf="@+id/playButton"
@@ -58,7 +57,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="162dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="162dp"
         android:onClick="playVideo"
         android:text="Play"
@@ -66,6 +65,20 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/videoview" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="27dp"
+        android:text="Swipe from the left or press the menu button in the top left corner to explore our university"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/playButton" />
 
 
 </android.support.constraint.ConstraintLayout>
