@@ -32,4 +32,8 @@ dependencies {
     implementation 'com.android.support:cardview-v7:28.0.0'
     implementation 'com.android.support:support-v4:28.0.0'
     implementation 'com.android.support:recyclerview-v7:28.0.0'
+    implementation 'com.google.vr:sdk-panowidget:1.180.0'
+    implementation 'com.google.vr:sdk-base:1.180.0'
+    implementation 'com.google.vr:sdk-audio:1.180.0'
+
 }
