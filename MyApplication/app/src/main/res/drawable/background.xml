@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@android:color/background_dark"/>
+    <item>
+        <bitmap android:src="@drawable/uoit_btf_duallogo_splash"
+            android:gravity="center"/>
+    </item>
+
+</layer-list>
