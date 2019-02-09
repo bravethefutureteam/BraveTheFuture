@@ -53,7 +53,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="10dp"
-                        android:text="TELE: Technologically Driven Learning Environment"
+                        android:text="TELE: Technologically Enriched Learning Environment"
                         android:textSize="18sp"
                         tools:layout_editor_absoluteX="100dp"
                         tools:layout_editor_absoluteY="332dp" />
