@@ -74,7 +74,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
         <TextView
-            android:id="@+id/button3"
+            android:id="@+id/nav_studentunion"
             android:layout_width="200dp"
             android:layout_height="117dp"
             android:layout_marginStart="100dp"
@@ -83,7 +83,7 @@
             android:text="Student Union Elections"
             android:textAppearance="@style/TextAppearance.AppCompat.Display2"
             android:textSize="30sp"
-            app:layout_constraintBottom_toTopOf="@+id/button4"
+            app:layout_constraintBottom_toTopOf="@+id/nav_ri3d"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -91,7 +91,7 @@
             android:background="@color/colorAccent"/>
 
         <TextView
-            android:id="@+id/button4"
+            android:id="@+id/nav_ri3d"
             android:layout_width="204dp"
             android:layout_height="116dp"
             android:layout_marginTop="30dp"
@@ -104,7 +104,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button3"
+            app:layout_constraintTop_toBottomOf="@+id/nav_studentunion"
             android:background="@color/colorAccent"/>
 
         <TextView
@@ -121,7 +121,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button4"
+            app:layout_constraintTop_toBottomOf="@+id/nav_ri3d"
             android:background="@color/colorAccent"/>
 
         <ImageButton
@@ -136,7 +136,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/button5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button4"
+            app:layout_constraintTop_toBottomOf="@+id/nav_ri3d"
             app:srcCompat="@drawable/btf_logo_main" />
 
         <ImageButton
@@ -150,8 +150,8 @@
             android:scaleType="fitCenter"
             app:layout_constraintBottom_toTopOf="@+id/button5"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/button4"
-            app:layout_constraintTop_toBottomOf="@+id/button3"
+            app:layout_constraintStart_toEndOf="@+id/nav_ri3d"
+            app:layout_constraintTop_toBottomOf="@+id/nav_studentunion"
             app:srcCompat="@drawable/soce" />
 
         <ImageButton
@@ -163,8 +163,8 @@
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="25dp"
             android:scaleType="fitCenter"
-            app:layout_constraintBottom_toTopOf="@+id/button4"
-            app:layout_constraintEnd_toStartOf="@+id/button3"
+            app:layout_constraintBottom_toTopOf="@+id/nav_ri3d"
+            app:layout_constraintEnd_toStartOf="@+id/nav_studentunion"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button"
             app:srcCompat="@drawable/sue1" />

@@ -53,7 +53,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/nav_studentunion"
             android:layout_width="200dp"
             android:layout_height="117dp"
             android:layout_marginStart="100dp"
@@ -62,14 +62,14 @@
             android:text="Placeholder 1"
             android:textAppearance="@style/TextAppearance.AppCompat.Display2"
             android:textSize="30sp"
-            app:layout_constraintBottom_toTopOf="@+id/button4"
+            app:layout_constraintBottom_toTopOf="@+id/nav_ri3d"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/nav_ri3d"
             android:layout_width="204dp"
             android:layout_height="116dp"
             android:layout_marginTop="30dp"
@@ -82,7 +82,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button3" />
+            app:layout_constraintTop_toBottomOf="@+id/nav_studentunion" />
 
         <Button
             android:id="@+id/button5"
@@ -99,7 +99,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button4" />
+            app:layout_constraintTop_toBottomOf="@+id/nav_ri3d" />
 
         <ImageView
             android:id="@+id/imageView5"
@@ -112,7 +112,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/button5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button4"
+            app:layout_constraintTop_toBottomOf="@+id/nav_ri3d"
             app:srcCompat="@drawable/vroomcar" />
 
         <ImageView
@@ -125,8 +125,8 @@
             android:layout_marginBottom="34dp"
             app:layout_constraintBottom_toTopOf="@+id/button5"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/button4"
-            app:layout_constraintTop_toBottomOf="@+id/button3"
+            app:layout_constraintStart_toEndOf="@+id/nav_ri3d"
+            app:layout_constraintTop_toBottomOf="@+id/nav_studentunion"
             app:srcCompat="@drawable/transition" />
 
         <ImageView
@@ -137,8 +137,8 @@
             android:layout_marginTop="65dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="25dp"
-            app:layout_constraintBottom_toTopOf="@+id/button4"
-            app:layout_constraintEnd_toStartOf="@+id/button3"
+            app:layout_constraintBottom_toTopOf="@+id/nav_ri3d"
+            app:layout_constraintEnd_toStartOf="@+id/nav_studentunion"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button"
             app:srcCompat="@drawable/bravethefuture_2lines_tagline" />

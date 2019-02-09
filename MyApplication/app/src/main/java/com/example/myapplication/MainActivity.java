@@ -25,12 +25,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     public void switchScreen(View button){
         switch(button.getId()){
-            case R.id.motorsports:
+            case R.id.nav_motorsports:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_motorsports)).commit();
                 break;
             case R.id.nav_durham:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_motorsports)).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_durhamtransfer)).commit();
                 break;
+            //case R.id.
         }
     }
 
@@ -94,7 +95,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.studentlife)).commit();
                 break;
             case R.id.nav_VirtualTour:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.virtual_tour)).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new VirtualTour()).commit();
                 break;
         }
 
