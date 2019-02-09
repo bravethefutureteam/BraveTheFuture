@@ -105,7 +105,7 @@
             android:background="@color/colorAccent"/>
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/motorsports"
             style="@android:style/Widget.Material.Light.Button.Toggle"
             android:layout_width="196dp"
             android:layout_height="120dp"
@@ -115,6 +115,7 @@
             android:text="Motorsports"
             android:textAppearance="@style/TextAppearance.AppCompat.Display2"
             android:textSize="30sp"
+            android:onClick="switchScreen"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"

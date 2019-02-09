@@ -23,6 +23,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private VideoView videoview;
     private MediaController mediaController;
 
+    public void switchScreen(View button){
+        switch(button.getId()){
+            case R.id.motorsports:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Motorsports()).commit();
+                break;
+        }
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
