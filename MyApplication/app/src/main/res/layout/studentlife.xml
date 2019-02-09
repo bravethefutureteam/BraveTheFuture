@@ -43,7 +43,8 @@
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
-                        android:src="@drawable/common_google_signin_btn_icon_dark"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/map"
                         tools:layout_editor_absoluteX="200dp"
                         tools:layout_editor_absoluteY="0dp" />
 
@@ -81,7 +82,8 @@
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
-                        android:src="@drawable/common_google_signin_btn_icon_dark"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/calendar"
                         tools:layout_editor_absoluteX="200dp"
                         tools:layout_editor_absoluteY="0dp" />
 
@@ -97,7 +99,8 @@
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
-                        android:src="@drawable/common_google_signin_btn_icon_dark"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/class"
                         tools:layout_editor_absoluteX="0dp"
                         tools:layout_editor_absoluteY="374dp" />
 
