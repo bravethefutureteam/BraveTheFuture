@@ -9,7 +9,7 @@
             android:icon="@drawable/ic_home_black_24dp"
             android:title="Home" />
         <item
-            android:id="@+id/nav_StudentLife"
+            android:id="@+id/nav_studentlife"
             android:icon="@drawable/ic_school_black_24dp"
             android:title="Brilliant Young Minds" />
         <item
