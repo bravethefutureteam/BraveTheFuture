@@ -42,7 +42,7 @@
     <VideoView
         android:id="@+id/videoview"
         android:layout_width="375dp"
-        android:layout_height="218dp"
+        android:layout_height="210dp"
         android:layout_marginStart="19dp"
         android:layout_marginEnd="18dp"
         android:layout_marginBottom="30dp"
