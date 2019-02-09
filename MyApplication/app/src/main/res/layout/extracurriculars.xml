@@ -72,7 +72,7 @@
             android:background="@color/colorPrimary"/>
 
         <TextView
-            android:id="@+id/nav_studentunion"
+            android:id="@+id/textsu"
             android:layout_width="190dp"
             android:layout_height="128dp"
             android:layout_marginStart="100dp"
@@ -82,14 +82,14 @@
             android:text="Student Union"
             android:textAppearance="@style/TextAppearance.AppCompat.Display2"
             android:textSize="30sp"
-            app:layout_constraintBottom_toTopOf="@+id/nav_ri3d"
+            app:layout_constraintBottom_toTopOf="@+id/text_ri3d"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/nav_ri3d"
+            android:id="@+id/text_ri3d"
             android:layout_width="180dp"
             android:layout_height="116dp"
             android:layout_marginTop="30dp"
@@ -98,15 +98,15 @@
             android:text="Robot In 3 Days"
             android:textAppearance="@style/TextAppearance.AppCompat.Display2"
             android:textSize="30sp"
-            app:layout_constraintBottom_toTopOf="@+id/text1"
+            app:layout_constraintBottom_toTopOf="@+id/text_motorsports"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/nav_studentunion"
+            app:layout_constraintTop_toBottomOf="@+id/textsu"
             android:background="@color/colorAccent"/>
 
         <TextView
-            android:id="@+id/nav_motorsports"
+            android:id="@+id/text_motorsports"
             android:layout_width="180dp"
             android:layout_height="120dp"
             android:layout_marginStart="100dp"
@@ -120,10 +120,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/nav_ri3d" />
+            app:layout_constraintTop_toBottomOf="@+id/text_ri3d" />
 
         <ImageButton
-            android:id="@+id/imageView5"
+            android:id="@+id/nav_motorsports"
             android:layout_width="170dp"
             android:layout_height="133dp"
             android:layout_marginStart="10dp"
@@ -132,13 +132,13 @@
             android:layout_marginBottom="14dp"
             android:scaleType="fitCenter"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/text1"
+            app:layout_constraintEnd_toStartOf="@+id/text_motorsports"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/nav_ri3d"
+            app:layout_constraintTop_toBottomOf="@+id/text_ri3d"
             app:srcCompat="@drawable/vroomcar" />
 
         <ImageButton
-            android:id="@+id/imageView8"
+            android:id="@+id/nav_ri3d"
             android:layout_width="170dp"
             android:layout_height="137dp"
             android:layout_marginStart="10dp"
@@ -146,15 +146,15 @@
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="34dp"
             android:scaleType="fitCenter"
-            app:layout_constraintBottom_toTopOf="@+id/text1"
+            app:layout_constraintBottom_toTopOf="@+id/text_motorsports"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toEndOf="@+id/nav_ri3d"
-            app:layout_constraintTop_toBottomOf="@+id/nav_studentunion"
+            app:layout_constraintStart_toEndOf="@+id/text_ri3d"
+            app:layout_constraintTop_toBottomOf="@+id/textsu"
             app:srcCompat="@drawable/ri3d" />
 
         <ImageButton
-            android:id="@+id/imageView9"
+            android:id="@+id/nav_studentunion"
             android:layout_width="170dp"
             android:layout_height="137dp"
             android:layout_marginStart="10dp"
@@ -162,8 +162,8 @@
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="25dp"
             android:scaleType="fitCenter"
-            app:layout_constraintBottom_toTopOf="@+id/nav_ri3d"
-            app:layout_constraintEnd_toStartOf="@+id/nav_studentunion"
+            app:layout_constraintBottom_toTopOf="@+id/text_ri3d"
+            app:layout_constraintEnd_toStartOf="@+id/textsu"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/nav_available"
             app:srcCompat="@drawable/su" />

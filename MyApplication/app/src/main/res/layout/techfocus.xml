@@ -39,7 +39,7 @@
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:id="@+id/imageButton7"
+                        android:id="@+id/nav_tele"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
@@ -78,7 +78,7 @@
                         tools:layout_editor_absoluteY="332dp" />
 
                     <ImageButton
-                        android:id="@+id/imageButton8"
+                        android:id="@+id/nav_labs"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
@@ -95,7 +95,7 @@
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:id="@+id/imageButton9"
+                        android:id="@+id/nav_software"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"

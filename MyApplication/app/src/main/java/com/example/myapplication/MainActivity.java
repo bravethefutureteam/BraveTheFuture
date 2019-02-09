@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_durham:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_durhamtransfer)).commit();
                 break;
-            //case R.id.
+
         }
     }
 
