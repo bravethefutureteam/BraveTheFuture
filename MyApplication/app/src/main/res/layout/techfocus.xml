@@ -83,7 +83,7 @@
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
                         android:scaleType="center"
-                        android:src="@drawable/lab"
+                        android:src="@drawable/moneylab"
                         tools:layout_editor_absoluteX="200dp"
                         tools:layout_editor_absoluteY="0dp" />
 
@@ -99,7 +99,8 @@
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
-                        android:src="@drawable/moneylab"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/cad"
                         tools:layout_editor_absoluteX="0dp"
                         tools:layout_editor_absoluteY="374dp" />
 
