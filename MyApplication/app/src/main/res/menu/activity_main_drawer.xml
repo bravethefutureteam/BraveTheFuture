@@ -36,6 +36,14 @@
             android:id="@+id/nav_ConnectedCampus"
             android:icon="@drawable/ic_wifi_tethering_black_24dp"
             android:title="Connected Campus" />
+        <item
+            android:id="@+id/nav_Developments"
+            android:icon="@drawable/ic_build_black_24dp"
+            android:title="New Developments" />
+        <item
+            android:id="@+id/nav_Donate"
+            android:icon="@drawable/ic_monetization_on_black_24dp"
+            android:title="Donate" />
     </group>
 
 </menu>
