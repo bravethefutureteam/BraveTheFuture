@@ -22,6 +22,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GoogleApiAvailability;
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -40,6 +41,8 @@ public class Map extends Fragment implements OnMapReadyCallback {
     private static final int ERROR_DIALOG_REQUEST = 9001;
     private static final int PERMISSIONS_REQUEST_ENABLE_GPS = 9002;
     private static final int PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION = 9003;
+    LatLng uoitLocation = new LatLng(43.944687,-78.897178);
+
 
     @Nullable
     @Override
@@ -99,6 +102,8 @@ public class Map extends Fragment implements OnMapReadyCallback {
         map.addMarker(new MarkerOptions().position(new LatLng(43.948151, -78.899089)).title("SIRC (Software Research Center)"));
         map.addMarker(new MarkerOptions().position(new LatLng(43.945733, -78.898948)).title("ACE (Automotive Center of Excellence)"));
         map.setMapType(GoogleMap.MAP_TYPE_HYBRID);
+        map.setTrafficEnabled(true);
+        map.moveCamera(CameraUpdateFactory.newLatLng(uoitLocation));
 
         if (ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             return;
