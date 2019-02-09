@@ -6,4 +6,6 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="motorsports">UOIT Motorsports was founded by a group of forward thinking individuals at the University of Ontario Institute of Technology in 2017. We are dedicated to researching and developing the future of automotive propulsion technologies, with the backing of our faculty and sponsors. We place value and emphasis on teamwork and efficiency as well as the art of knowledge transfer here at UOIT Motorsports.</string>
+    <string name="uoit_motorsports">UOIT Motorsports</string>
 </resources>
