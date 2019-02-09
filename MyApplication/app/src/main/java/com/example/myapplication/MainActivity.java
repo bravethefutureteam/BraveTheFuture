@@ -26,10 +26,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public void switchScreen(View button){
         switch(button.getId()){
             case R.id.motorsports:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Motorsports()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_motorsports)).commit();
                 break;
             case R.id.nav_durham:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Motorsports()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_motorsports)).commit();
                 break;
         }
     }
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         toggle.syncState();
 
         if (savedInstanceState == null) {
-           getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Home()).commit();
+           getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new basicFragment(R.layout.app_bar_main)).commit();
            navigationView.setCheckedItem(R.id.nav_Home);
        }
     }
@@ -73,28 +73,28 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item){
         switch (item.getItemId()){
             case R.id.nav_Home:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Home()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.app_bar_main)).commit();
                 break;
             case R.id.nav_Information:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Information()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.information)).commit();
                 break;
             case R.id.nav_ExtraCurriculars:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new ExtraCurriculars()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.extracurriculars)).commit();
                 break;
             case R.id.nav_TechFocus:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new TechFocus()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.techfocus)).commit();
                 break;
             case R.id.nav_MentalHealth:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new MentalHealth()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.mentalhealth)).commit();
                 break;
             case R.id.nav_ConnectedCampus:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new ConnectedCampus()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.campusconnected)).commit();
                 break;
             case R.id.nav_StudentLife:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new StudentLife()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.studentlife)).commit();
                 break;
             case R.id.nav_VirtualTour:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new VirtualTour()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.virtual_tour)).commit();
                 break;
         }
 
