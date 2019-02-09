@@ -39,10 +39,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-         playButton = (Button) findViewById(R.id.playButton);
-         videoview = (VideoView) findViewById(R.id.videoview);
-         mediaController = new MediaController(this);
-
         if (savedInstanceState == null) {
            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new Home()).commit();
            navigationView.setCheckedItem(R.id.nav_Home);
@@ -50,6 +46,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void playVideo(View v){
+        playButton = (Button) findViewById(R.id.playButton);
+        videoview = (VideoView) findViewById(R.id.videoview);
+        mediaController = new MediaController(this);
         mediaController.setAnchorView(videoview);
         videoview.setMediaController(mediaController);
         videoview.setKeepScreenOn(true);
