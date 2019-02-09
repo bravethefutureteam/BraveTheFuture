@@ -12,6 +12,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.MediaController;
 import android.widget.VideoView;
 
 
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private DrawerLayout drawer;
     private Button playButton;
     private VideoView videoview;
+    private MediaController mediaController;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +40,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
          playButton = (Button) findViewById(R.id.playButton);
          videoview = (VideoView) findViewById(R.id.videoView);
+         mediaController = new MediaController(this);
 
 
         if (savedInstanceState == null) {
@@ -47,6 +50,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void videoview(View v){
+        mediaController.setAnchorView(videoview);
+        videoview.setMediaController(mediaController);
+        videoview.setKeepScreenOn(true);
         String videoPath = "android.resource://com.example.myapplication/"+R.raw.btf_promo;
         Uri uri = Uri.parse(videoPath);
         videoview.setVideoURI(uri);
