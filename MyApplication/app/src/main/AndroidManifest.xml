@@ -27,6 +27,13 @@
             android:screenOrientation="portrait">
         </activity>
 
+        <activity
+            android:name=".Motorsport"
+            android:label="Motorsports"
+            android:theme="@style/AppTheme.NoActionBar"
+            >
+        </activity>
+
     </application>
 
 </manifest>
