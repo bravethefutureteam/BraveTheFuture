@@ -18,6 +18,7 @@ public class VirtualTour extends Fragment {
     private VrPanoramaView mVRPanoramaView1;
     private VrPanoramaView mVRPanoramaView2;
     private VrPanoramaView mVRPanoramaView3;
+    private VrPanoramaView mVRPanoramaView4;
 
     @Nullable
     @Override
@@ -26,6 +27,7 @@ public class VirtualTour extends Fragment {
         mVRPanoramaView1 = (VrPanoramaView) view.findViewById(R.id.vrPanoramaViewTest1);
         mVRPanoramaView2 = (VrPanoramaView) view.findViewById(R.id.vrPanoramaViewTest2);
         mVRPanoramaView3 = (VrPanoramaView) view.findViewById(R.id.vrPanoramaViewTest3);
+        mVRPanoramaView4 = (VrPanoramaView) view.findViewById(R.id.vrPanoramaViewTest4);
         loadPhotoSphere();
 
         return view;
@@ -48,6 +50,10 @@ public class VirtualTour extends Fragment {
             inputStream = assetManager.open("vrtest3.jpg");
             options.inputType = VrPanoramaView.Options.TYPE_MONO;
             mVRPanoramaView3.loadImageFromBitmap(BitmapFactory.decodeStream(inputStream), options);
+            inputStream.close();
+            inputStream = assetManager.open("vrtest4.jpg");
+            options.inputType = VrPanoramaView.Options.TYPE_MONO;
+            mVRPanoramaView4.loadImageFromBitmap(BitmapFactory.decodeStream(inputStream), options);
             inputStream.close();
         } catch (Exception e) {
             e.printStackTrace();
