@@ -1,9 +1,13 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Brave the Future</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <string name="motorsports">UOIT Motorsports was founded by a group of forward thinking individuals at the University of Ontario Institute of Technology in 2017. We are dedicated to researching and developing the future of automotive propulsion technologies, with the backing of our faculty and sponsors. We place value and emphasis on teamwork and efficiency as well as the art of knowledge transfer here at UOIT Motorsports.</string>
+    <string name="uoit_motorsports">UOIT Motorsports</string>
+    <string name="ri3d">Robot in 3 Days (RI3D) is a program meant to first but not foremost entertain and secondly, to inspire and spark ideas. RI3D is a great way to start teams o during the first week of Robot Build Season. Particularly for low resource teams, RI3D allows them to consider di erent prototypes that they would otherwise not have been able to build. RI3D is a great resource for many teams. Many of the members on our team have benefited greatly from learning what other RI3D have had to o er in previous years.</string>
+    <string name="usuelections">UOIT Student Union exists to enhance our student experience. The union is governed by student representatives elected by their peers each year. These students work together to lead the union’s initiatives. It’s your union, your voice. Make the most of your university experience. Run for the office, attend the forum and cast your vote online.</string>
 </resources>
