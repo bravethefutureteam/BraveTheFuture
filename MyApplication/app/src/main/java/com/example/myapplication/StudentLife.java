@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.LocationManager;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
@@ -28,6 +29,8 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import java.util.concurrent.TimeUnit;
+
 import static android.support.constraint.Constraints.TAG;
 
 public class StudentLife extends Fragment implements OnMapReadyCallback {
@@ -43,10 +46,15 @@ public class StudentLife extends Fragment implements OnMapReadyCallback {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.studentlife, container, false);
         if (!checkMapServices() || !userLocationPermissionGranted) {
             getLocationPermission();
         }
+        try {
+            TimeUnit.SECONDS.sleep(5);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        View view = inflater.inflate(R.layout.studentlife, container, false);
         mMapView = (MapView) view.findViewById(R.id.mapView);
         Bundle mapViewBundle = null;
         if (savedInstanceState != null) {
@@ -55,8 +63,6 @@ public class StudentLife extends Fragment implements OnMapReadyCallback {
         mMapView.onCreate(mapViewBundle);
 
         mMapView.getMapAsync(this);
-
-
         return view;
     }
 
@@ -152,11 +158,6 @@ public class StudentLife extends Fragment implements OnMapReadyCallback {
     }
 
     private void getLocationPermission() {
-        /*
-         * Request location permission, so that we can get the location of the
-         * device. The result of the permission request is handled by a callback,
-         * onRequestPermissionsResult.
-         */
         if (ContextCompat.checkSelfPermission(getActivity().getApplicationContext(),
                 android.Manifest.permission.ACCESS_FINE_LOCATION)
                 == PackageManager.PERMISSION_GRANTED) {
