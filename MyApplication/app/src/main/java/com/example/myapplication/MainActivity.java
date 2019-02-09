@@ -5,6 +5,7 @@ import android.content.res.AssetManager;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
 import android.view.View;
 import android.support.design.widget.NavigationView;
@@ -18,7 +19,7 @@ import android.view.MenuItem;
 import com.google.vr.sdk.widgets.pano.VrPanoramaView;
 import java.io.InputStream;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawer;
 
     private VrPanoramaView mVRPanoramaView;
@@ -34,11 +35,30 @@ public class MainActivity extends AppCompatActivity {
         loadPhotoSphere();
 
         drawer = findViewById(R.id.drawer_layout);
+        NavigationView navigationView = findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
+
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
+//       if (savedInstanceState == null) {
+//           getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ExtraCurriculars()).commit();
+//           navigationView.setCheckedItem(R.id.nav_ExtraCurriculars);
+//       }
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item){
+        switch (item.getItemId()){
+            case R.id.nav_ExtraCurriculars:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new ExtraCurriculars()).commit();
+                break;
+        }
+
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
     }
 
     @Override
