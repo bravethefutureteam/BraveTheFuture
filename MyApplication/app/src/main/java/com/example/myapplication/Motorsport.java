@@ -1,11 +1,9 @@
 package com.example.myapplication;
 
-import android.content.Intent;
-import android.content.res.AssetManager;
-import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -15,70 +13,31 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import com.google.vr.sdk.widgets.pano.VrPanoramaView;
-import java.io.InputStream;
+import android.content.Intent;
 
-public class MainActivity extends AppCompatActivity
+import com.example.myapplication.R;
+
+
+public class Motorsport extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
-    private VrPanoramaView mVRPanoramaView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.individual_motorsports);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent browser_intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://uoit.ca/crisis-centre/"));
-                startActivity(browser_intent);
-            }
-        });
-        mVRPanoramaView = (VrPanoramaView) findViewById(R.id.vrPanoramaView);
-        loadPhotoSphere();
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.addDrawerListener(toggle);
-        toggle.syncState();
-
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
-
-
-    }
-
-    private void loadPhotoSphere() {
-        VrPanoramaView.Options options = new VrPanoramaView.Options();
-        InputStream inputStream = null;
-
-        AssetManager assetManager = getAssets();
-        try {
-            inputStream = assetManager.open("vrtest.jpg");
-            options.inputType = VrPanoramaView.Options.TYPE_MONO;
-            mVRPanoramaView.loadImageFromBitmap(BitmapFactory.decodeStream(inputStream), options);
-            inputStream.close();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
     }
 
     @Override
     public void onBackPressed() {
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
             super.onBackPressed();
         }
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -108,12 +67,10 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        int id = item.getItemId();
-
         if (id == R.id.nav_ConnectedCampus) {
 
         } else if (id == R.id.nav_ExtraCurriculars) {
-            startActivity(new Intent(MainActivity.this, Motorsport.class));
+
         } else if (id == R.id.nav_Information) {
 
         } else if (id == R.id.nav_MentalHealth) {
@@ -124,6 +81,8 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_VirtualTour) {
 
+        } else if (id == R.id.nav_Home){
+            startActivity(new Intent(Motorsport.this, MainActivity.class));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
