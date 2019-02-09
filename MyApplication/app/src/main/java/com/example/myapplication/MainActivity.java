@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.campusconnected)).commit();
                 break;
             case R.id.nav_StudentLife:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.studentlife)).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new StudentLife()).commit();
                 break;
             case R.id.nav_VirtualTour:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new VirtualTour()).commit();

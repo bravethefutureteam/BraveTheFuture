@@ -12,6 +12,8 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBShMPuAtYxwpGQdeaDCoWvB5o_p9_n95Y"/>
+
         <activity android:name=".SplashActivity" android:theme="@style/AppTheme.Launcher">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
