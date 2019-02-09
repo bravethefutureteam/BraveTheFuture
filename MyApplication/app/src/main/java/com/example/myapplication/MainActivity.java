@@ -28,6 +28,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private VideoView videoview;
     private MediaController mediaController;
 
+    public void back(View button){
+        if (history.size() > 0){
+           getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(history.pop())).commit();
+        }
+    }
+
     public void switchScreen(View button){
         switch(button.getId()){
             case R.id.nav_available:
