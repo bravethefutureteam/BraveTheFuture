@@ -24,61 +24,38 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
                 <TextView
-                    android:id="@+id/text17"
+                    android:id="@+id/text7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Home Away From Home: A Connected Campus"
+                    android:text="Technologically Driven"
                     android:textSize="32sp"
                     android:textAlignment="center"
                     android:layout_marginTop="125dp"/>
 
-                    <TextView
-                        android:id="@+id/text18"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="25dp"
-                        android:text="Have you been to Polonsky Commons?"
-                        android:textAlignment="center"
-                        android:textSize="20sp"
-                        />
-
-                    <com.google.vr.sdk.widgets.pano.VrPanoramaView
-                        android:id="@+id/vrPanoramaViewTest1"
-                        android:layout_width="match_parent"
-                        android:layout_height="250dp"
-                        tools:layout_editor_absoluteX="0dp"
-                        tools:layout_editor_absoluteY="70dp">
-
-                    </com.google.vr.sdk.widgets.pano.VrPanoramaView>
-
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:id="@+id/nav_ignite"
+                        android:id="@+id/nav_tele"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
-                        android:src="@drawable/ignite"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/tele"
                         android:onClick="switchScreen"
                         tools:layout_editor_absoluteX="200dp"
                         tools:layout_editor_absoluteY="0dp" />
 
                     <TextView
-                        android:id="@+id/text19"
+                        android:id="@+id/text8"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="10dp"
-                        android:text="Ignite"
+                        android:text="TELE: Technologically Enriched Learning Environment"
                         android:textSize="18sp"
                         tools:layout_editor_absoluteX="100dp"
                         tools:layout_editor_absoluteY="332dp" />
@@ -91,23 +68,23 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/text20"
+                        android:id="@+id/text9"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:layout_marginLeft="28dp"
-                        android:text="GEARS for Engineers"
+                        android:text="Hands on Labs"
                         android:textSize="18sp"
                         tools:layout_editor_absoluteX="100dp"
                         tools:layout_editor_absoluteY="332dp" />
 
                     <ImageButton
-                        android:id="@+id/nav_gears"
+                        android:id="@+id/nav_labs"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/gearshat"
+                        android:scaleType="center"
+                        android:src="@drawable/moneylab"
                         android:onClick="switchScreen"
                         tools:layout_editor_absoluteX="200dp"
                         tools:layout_editor_absoluteY="0dp" />
@@ -120,62 +97,32 @@
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:id="@+id/nav_transit"
+                        android:id="@+id/nav_software"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/drts"
+                        android:src="@drawable/cad"
                         android:onClick="switchScreen"
                         tools:layout_editor_absoluteX="0dp"
                         tools:layout_editor_absoluteY="374dp" />
 
 
                     <TextView
-                        android:id="@+id/text21"
+                        android:id="@+id/text10"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="10dp"
-                        android:text="Free Transit anywhere in Durham!"
+                        android:text="Access to tens of thousands of dollars worth of Software"
                         android:textSize="18sp"
                         tools:layout_editor_absoluteX="100dp"
                         tools:layout_editor_absoluteY="332dp" />
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/text22"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:layout_marginLeft="25dp"
-                        android:text="Transfer from Durham"
-                        android:textSize="18sp"
-                        tools:layout_editor_absoluteX="100dp"
-                        tools:layout_editor_absoluteY="332dp" />
-
-                    <ImageButton
-                        android:id="@+id/nav_durham"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_marginLeft="25dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/dcuoit"
-                        android:onClick="switchScreen"
-                        tools:layout_editor_absoluteX="200dp"
-                        tools:layout_editor_absoluteY="0dp" />
-
-                </LinearLayout>
-
-
             </LinearLayout>
-            </LinearLayout>
+
         </ScrollView>
 
     </android.support.constraint.ConstraintLayout>
