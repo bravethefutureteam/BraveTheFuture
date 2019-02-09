@@ -70,7 +70,7 @@
             android:textColor="@color/colorAccent"
             android:background="@color/colorPrimary"/>
 
-        <Button
+        <TextView
             android:id="@+id/button3"
             android:layout_width="200dp"
             android:layout_height="117dp"
@@ -87,7 +87,7 @@
             app:layout_constraintTop_toTopOf="parent"
             android:background="@color/colorAccent"/>
 
-        <Button
+        <TextView
             android:id="@+id/button4"
             android:layout_width="204dp"
             android:layout_height="116dp"
@@ -104,7 +104,7 @@
             app:layout_constraintTop_toBottomOf="@+id/button3"
             android:background="@color/colorAccent"/>
 
-        <Button
+        <TextView
             android:id="@+id/button5"
             style="@android:style/Widget.Material.Light.Button.Toggle"
             android:layout_width="196dp"
@@ -122,7 +122,7 @@
             app:layout_constraintTop_toBottomOf="@+id/button4"
             android:background="@color/colorAccent"/>
 
-        <ImageView
+        <ImageButton
             android:id="@+id/imageView5"
             android:layout_width="190dp"
             android:layout_height="133dp"
@@ -136,21 +136,21 @@
             app:layout_constraintTop_toBottomOf="@+id/button4"
             app:srcCompat="@drawable/vroomcar" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/imageView8"
-            android:layout_width="187dp"
-            android:layout_height="137dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="34dp"
-            android:layout_marginEnd="10dp"
-            android:layout_marginBottom="34dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ri3d"
             app:layout_constraintBottom_toTopOf="@+id/button5"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.561"
             app:layout_constraintStart_toEndOf="@+id/button4"
             app:layout_constraintTop_toBottomOf="@+id/button3"
-            app:srcCompat="@drawable/ri3d" />
+            app:layout_constraintVertical_bias="0.49" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/imageView9"
             android:layout_width="190dp"
             android:layout_height="137dp"
@@ -158,6 +158,7 @@
             android:layout_marginTop="65dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="25dp"
+            android:scaleType="fitCenter"
             app:layout_constraintBottom_toTopOf="@+id/button4"
             app:layout_constraintEnd_toStartOf="@+id/button3"
             app:layout_constraintStart_toStartOf="parent"

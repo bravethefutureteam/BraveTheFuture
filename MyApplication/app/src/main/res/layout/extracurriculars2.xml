@@ -70,7 +70,7 @@
             android:textColor="@color/colorAccent"
             android:background="@color/colorPrimary"/>
 
-        <Button
+        <TextView
             android:id="@+id/button3"
             android:layout_width="200dp"
             android:layout_height="117dp"
@@ -87,7 +87,7 @@
             app:layout_constraintTop_toTopOf="parent"
             android:background="@color/colorAccent"/>
 
-        <Button
+        <TextView
             android:id="@+id/button4"
             android:layout_width="204dp"
             android:layout_height="116dp"
@@ -104,9 +104,8 @@
             app:layout_constraintTop_toBottomOf="@+id/button3"
             android:background="@color/colorAccent"/>
 
-        <Button
+        <TextView
             android:id="@+id/button5"
-            style="@android:style/Widget.Material.Light.Button.Toggle"
             android:layout_width="196dp"
             android:layout_height="120dp"
             android:layout_marginStart="100dp"
@@ -122,7 +121,7 @@
             app:layout_constraintTop_toBottomOf="@+id/button4"
             android:background="@color/colorAccent"/>
 
-        <ImageView
+        <ImageButton
             android:id="@+id/imageView5"
             android:layout_width="190dp"
             android:layout_height="133dp"
@@ -130,13 +129,14 @@
             android:layout_marginTop="31dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="14dp"
+            android:scaleType="fitCenter"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/button5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button4"
             app:srcCompat="@drawable/btf_logo_main" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/imageView8"
             android:layout_width="187dp"
             android:layout_height="137dp"
@@ -144,13 +144,14 @@
             android:layout_marginTop="34dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="34dp"
+            android:scaleType="fitCenter"
             app:layout_constraintBottom_toTopOf="@+id/button5"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/button4"
             app:layout_constraintTop_toBottomOf="@+id/button3"
             app:srcCompat="@drawable/transition" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/imageView9"
             android:layout_width="190dp"
             android:layout_height="137dp"
@@ -158,6 +159,7 @@
             android:layout_marginTop="65dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="25dp"
+            android:scaleType="fitCenter"
             app:layout_constraintBottom_toTopOf="@+id/button4"
             app:layout_constraintEnd_toStartOf="@+id/button3"
             app:layout_constraintStart_toStartOf="parent"
