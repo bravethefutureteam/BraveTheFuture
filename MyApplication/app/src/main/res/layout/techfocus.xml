@@ -8,7 +8,7 @@
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="640dp"
+        android:layout_height="760dp"
         tools:layout_editor_absoluteY="91dp">
 
         <ScrollView
