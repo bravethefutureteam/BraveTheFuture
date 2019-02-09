@@ -16,8 +16,13 @@ import android.widget.Button;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
+import java.util.Stack;
+
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+
+    private Stack<Integer> history;
+
     private DrawerLayout drawer;
     private Button playButton;
     private VideoView videoview;
@@ -27,66 +32,87 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch(button.getId()){
             case R.id.nav_available:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.extracurriculars)).commit();
+                history.push(R.layout.extracurriculars);
                 break;
             case R.id.nav_bravethefuture:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_btf)).commit();
+                history.push(R.layout.individual_btf);
                 break;
             case R.id.nav_calendar:
-                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.calendar)).commit();
+                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.calendaractivity)).commit();
+                //history.push(R.layout.calendaractivity);
                 break;
             case R.id.nav_classrooms:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.classavailablility)).commit();
+                history.push(R.layout.classavailablility);
                 break;
             case R.id.nav_councellors:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_mental)).commit();
+                history.push(R.layout.individual_mental);
                 break;
             case R.id.nav_durham:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_durhamtransfer)).commit();
+                history.push(R.layout.individual_durhamtransfer);
                 break;
             case R.id.nav_gears:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_gears)).commit();
+                history.push(R.layout.individual_gears);
                 break;
             case R.id.nav_ignite:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_ignite)).commit();
+                history.push(R.layout.individual_ignite);
                 break;
             case R.id.nav_labs:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_labs)).commit();
+                history.push(R.layout.individual_labs);
                 break;
             case R.id.nav_motorsports:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_motorsports)).commit();
+                history.push(R.layout.individual_motorsports);
                 break;
             case R.id.nav_pass:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_pass)).commit();
+                history.push(R.layout.individual_pass);
                 break;
             case R.id.nav_ri3d:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_ri3d)).commit();
+                history.push(R.layout.individual_ri3d);
                 break;
             case R.id.nav_sami:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_sami)).commit();
+                history.push(R.layout.individual_sami);
                 break;
             case R.id.nav_schoolmap:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Map()).commit();
+
                 break;
             case R.id.nav_societyelections:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_soce)).commit();
+                history.push(R.layout.individual_soce);
                 break;
             case R.id.nav_software:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_soft)).commit();
+                history.push(R.layout.individual_soft);
                 break;
             case R.id.nav_studentunion:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_usu)).commit();
+                history.push(R.layout.individual_usu);
                 break;
             case R.id.nav_studentunionelections:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_usuelections)).commit();
+                history.push(R.layout.individual_usuelections);
                 break;
             case R.id.nav_tele:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_tele)).commit();
+                history.push(R.layout.individual_tele);
                 break;
             case R.id.nav_transit:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_drt)).commit();
+                history.push(R.layout.individual_drt);
                 break;
             case R.id.nav_upcoming:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.extracurriculars2)).commit();
+                history.push(R.layout.extracurriculars2);
                 break;
         }
     }
