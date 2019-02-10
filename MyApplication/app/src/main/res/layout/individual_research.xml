@@ -8,65 +8,107 @@
     android:gravity="bottom"
     android:orientation="vertical">
 
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="606dp">
 
-    <android.support.constraint.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="606dp"
-        android:background="#ffffff">
-
-        <ScrollView
+        <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="606dp"
+            android:background="#ffffff">
 
-            <LinearLayout
-                android:layout_width="match_parent"
+            <ImageButton
+                android:id="@+id/imageView2"
+                android:layout_width="277dp"
+                android:layout_height="186dp"
+                android:layout_marginStart="63dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="63dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                app:srcCompat="@drawable/erc" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="90dp"
+                android:fontFamily="@font/franklin_gothic_medium"
+                android:text="Research Projects"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="90dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="90dp"
-                    android:fontFamily="@font/franklin_gothic_medium"
-                    android:text="UOIT Research Projects"
-                    android:textAlignment="center"
-                    android:textSize="30sp"
-                    android:textStyle="bold"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="93dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="88dp"
+                android:fontFamily="@font/franklin_gothic_book_regular"
+                android:text="Brave The Future with ACE!"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
-                <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="272dp"
-                    android:layout_height="146dp"
-                    android:layout_marginStart="63dp"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginEnd="63dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView2"
-                    app:srcCompat="@drawable/erc" />
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="149dp"
+                android:layout_marginEnd="175dp"
+                android:text="Brave Ace Research!"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="367dp"
-                    android:layout_height="392dp"
-                    android:layout_marginStart="35dp"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginEnd="35dp"
-                    android:fontFamily="@font/franklin_gothic_book_regular"
-                    android:text="LOOK AT US ReSEARCHING THINGS YAY!"
-                    android:textSize="24sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="37dp"
+                android:text="Brave The Future with our Clean Energy Research Lab"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageButton2" />
 
-            </LinearLayout>
-        </ScrollView>
+            <ImageButton
+                android:id="@+id/imageButton2"
+                android:layout_width="277dp"
+                android:layout_height="186dp"
+                android:layout_marginStart="67dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginEnd="67dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/button5"
+                app:srcCompat="@drawable/cerl" />
 
-    </android.support.constraint.ConstraintLayout>
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="161dp"
+                android:layout_marginEnd="162dp"
+                android:text="Brave Clean Energy Research!"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
 </LinearLayout>
