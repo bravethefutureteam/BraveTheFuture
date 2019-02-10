@@ -89,6 +89,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
                 history.push(f);
                 break;
+            case R.id.nav_polonsky:
+                f = new VirtualTourPolonsky();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+                history.push(f);
+                break;
             case R.id.nav_research:
                 f = new basicFragment(R.layout.individual_research);
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
@@ -208,11 +213,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 history.push(f);
                 break;
             case R.id.nav_Survey:
-                    f = new basicFragment(R.layout.individual_survey);
-                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
-                    history.push(f);
-
-
+                f = new basicFragment(R.layout.individual_survey);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+                history.push(f);
                 break;
             case R.id.nav_Map:
                 f = new Map();
