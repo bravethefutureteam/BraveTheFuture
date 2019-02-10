@@ -26,6 +26,7 @@ import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -106,6 +107,11 @@ public class Map extends Fragment implements OnMapReadyCallback {
         map.addMarker(new MarkerOptions().position(new LatLng(43.944394, -78.892161)).title("Simcoe Village Residence"));
         map.addMarker(new MarkerOptions().position(new LatLng(43.944228, -78.898755)).title("CRWC (Campus Recreation and Wellness Center)"));
         map.addMarker(new MarkerOptions().position(new LatLng(43.943193, -78.898659)).title("UP (University Pavilion"));
+        map.addMarker(new MarkerOptions().position(new LatLng(43.946927, -78.898339)).title("New Development Block - Replaces Founders 2 Lot").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
+        map.addMarker(new MarkerOptions().position(new LatLng(43.946232, -78.896537)).title("New Development Block - Replaces Portables").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
+        map.addMarker(new MarkerOptions().position(new LatLng(43.951283, -78.905099)).title("New Innovation Park Development Blocks").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
+        map.addMarker(new MarkerOptions().position(new LatLng(43.952704, -78.902706)).title("New Development Block").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
+
         map.setMapType(GoogleMap.MAP_TYPE_HYBRID);
         map.setTrafficEnabled(true);
         map.moveCamera(CameraUpdateFactory.newLatLngZoom((uoitLocation),16));
