@@ -55,7 +55,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView2"
-                    app:srcCompat="@drawable/common_google_signin_btn_text_dark" />
+                    app:srcCompat="@drawable/staff" />
 
                 <TextView
                     android:id="@+id/textView3"
