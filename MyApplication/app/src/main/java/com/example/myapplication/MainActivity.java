@@ -10,6 +10,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Layout;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -21,7 +22,7 @@ import java.util.Stack;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    private Stack<Integer> history;
+    private Stack<Pages> history;
 
     private DrawerLayout drawer;
     private Button playButton;
@@ -30,26 +31,23 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     public void back(View button){
         if (history.size() > 0){
-           getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(history.pop())).commit();
+           //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(history.pop())).commit();
         }
     }
 
-    public void switchScreen(View button){
+        public void switchScreen(View button){
         switch(button.getId()){
-
             //case R.id.nav_bravethefuture:
                 //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_btf)).commit();
                 //history.push(R.layout.individual_btf);
                 //break;
-
-            case R.id.nav_studentlife:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_durhamtransfer)).commit();
-                history.push(R.layout.individual_durhamtransfer);
-                break;
-
+//            case R.id.nav_studentlife:
+//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_durhamtransfer)).commit();
+//                //history.push(R.layout.individual_durhamtransfer);
+//                break;
             case R.id.nav_labs:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_labs)).commit();
-                history.push(R.layout.individual_labs);
+                //history.push(R.layout.individual_labs);
                 break;
             //case R.id.nav_motorsports:
                 //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_motorsports)).commit();
@@ -78,7 +76,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
             case R.id.nav_tele:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_tele)).commit();
-                history.push(R.layout.individual_tele);
+                //history.push(R.layout.individual_tele);
                 break;
             case R.id.nav_Donate:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_donate)).commit();
@@ -132,19 +130,23 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_Home:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.app_bar_main)).commit();
                 break;
-            case R.id.nav_TechFocus:
+            case R.id.nav_BrilliantYoungMinds:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.youngminds)).commit();
+                break;
+            case R.id.nav_WorldClassTalent:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.worldclass)).commit();
+                break;
+            case R.id.nav_HighTechFacilities:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.techfocus)).commit();
                 break;
-
+            case R.id.nav_OneOfAKindResearch:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.oneofakind)).commit();
+                break;
             case R.id.nav_Map:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Map()).commit();
                 break;
-
             case R.id.nav_VirtualTour:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new VirtualTourAce()).commit();
-                break;
-            case R.id.nav_Developments:
-                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.newdevelopments)).commit();
                 break;
             case R.id.nav_Donate:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_donate)).commit();
@@ -164,8 +166,47 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
     }
 
+    public Object switchLayout(Pages p){
+        switch (p){
+            case HOME:
+                return new basicFragment(R.layout.app_bar_main);
+            case YOUNG_MINDS:
+                return new basicFragment(R.layout.youngminds);
+            case WIE:
+                return new basicFragment(R.layout.individual_wie);
+            case TESTIMONIALS:
+                return new basicFragment(R.layout.individual_testimonials);
+            case BRING_YOUR_ON_CHANGE:
+                return new basicFragment(R.layout.individual_byoc);
+            case SAMI:
+                return new basicFragment(R.layout.individual_sami);
+            case DURHAM_TRANSFER_PROGRAMS:
+                return new basicFragment(R.layout.individual_durhamtransfer);
+            case WORLD_CLASS:
+                return new basicFragment(R.layout.worldclass);
+            case EWB:
+                return new basicFragment(R.layout.individual_ewb);
+            case COOP:
+                return new basicFragment(R.layout.individual_coop);
+            case TEACHING_PROFESSORS:
+                return new basicFragment(R.layout.individual_teaching);
+            case HIGH_TECH_FACILITIES:
+                return new basicFragment(R.layout.techfocus);
+            case MOTORSPORTS:
+                return new basicFragment(R.layout.individual_motorsports);
+            case TELE:
+                return new basicFragment(R.layout.individual_tele);
+            case LIBRARY:
+                //return new basicFragment(R.layout.library);
+            case FORENSIC_BULDING:
+                //return new basicFragment(R.layout.individal_forensicbuilding);
+                
+        }
+        return null;
+    }
+
     public enum Pages {
         HOME, YOUNG_MINDS, WIE, TESTIMONIALS, BRING_YOUR_ON_CHANGE, SAMI, DURHAM_TRANSFER_PROGRAMS, WORLD_CLASS, EWB, COOP, TEACHING_PROFESSORS, HIGH_TECH_FACILITIES,
-        MOTORSPORTS, TELE, THREE_D_PRINTERS, FORENSIC_BULDING, NUCLEAR_POWER, ACE, ONE_OF_A_KIND_RESEARCH, RI3D, RESEARCH_PROFESSORS, IOT, ML
+        MOTORSPORTS, TELE, LIBRARY, FORENSIC_BULDING, NUCLEAR_POWER, ACE, ONE_OF_A_KIND_RESEARCH, RI3D, RESEARCH_PROFESSORS, IOT, ML
     }
 }
