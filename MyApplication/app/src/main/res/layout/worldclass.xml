@@ -45,7 +45,7 @@
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/tele"
+                        android:src="@drawable/ewbmain"
                         android:onClick="switchScreen"
                         tools:layout_editor_absoluteX="200dp"
                         tools:layout_editor_absoluteY="0dp" />
@@ -88,8 +88,8 @@
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
-                        android:scaleType="center"
-                        android:src="@drawable/moneylab"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/first"
                         android:onClick="switchScreen"
                         tools:layout_editor_absoluteX="200dp"
                         tools:layout_editor_absoluteY="0dp" />
@@ -107,22 +107,10 @@
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/cad"
+                        android:src="@drawable/profs"
                         android:onClick="switchScreen"
                         tools:layout_editor_absoluteX="0dp"
                         tools:layout_editor_absoluteY="374dp" />
-
-
-                    <TextView
-                        android:id="@+id/text10"
-                        android:layout_width="match_parent"
-                        android:layout_height="77dp"
-                        android:layout_weight="1"
-                        android:padding="10dp"
-                        android:text="Coop on YOUR terms"
-                        android:textSize="18sp"
-                        tools:layout_editor_absoluteX="100dp"
-                        tools:layout_editor_absoluteY="332dp" />
 
                     <TextView
                         android:id="@+id/text11"
