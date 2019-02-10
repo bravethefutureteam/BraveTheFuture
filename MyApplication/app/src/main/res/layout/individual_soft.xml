@@ -15,15 +15,25 @@
         android:background="#ffffff">
 
         <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="411dp"
+            android:layout_height="214dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:srcCompat="@drawable/refractions" />
+
+        <ImageView
             android:id="@+id/imageView2"
             android:layout_width="279dp"
             android:layout_height="183dp"
             android:layout_marginStart="63dp"
-            android:layout_marginTop="14dp"
             android:layout_marginEnd="63dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView2"
             app:srcCompat="@drawable/cad" />
 
         <TextView
@@ -45,15 +55,15 @@
         <TextView
             android:id="@+id/textView3"
             android:layout_width="347dp"
-            android:layout_height="335dp"
+            android:layout_height="322dp"
             android:layout_marginStart="35dp"
-            android:layout_marginTop="14dp"
             android:layout_marginEnd="35dp"
             android:fontFamily="@font/franklin_gothic_book_regular"
             android:text="If you are a full TELE student than most of your software comes pre-installed on your provided UOIT laptop, and additional software is available in LANDesk. If you are a BYOD student you can log into the UOIT Software Portal using your uoit.net account to download and install all program-specific software you need."
+            android:textAlignment="center"
             android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+            app:layout_constraintStart_toStartOf="parent" />
     </android.support.constraint.ConstraintLayout>
 </LinearLayout>

@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single" android:id="@+id/menu_top">
+    <group
+        android:id="@+id/menu_top"
+        android:checkableBehavior="single">
         <item
             android:id="@+id/nav_Home"
             android:icon="@drawable/ic_home_black_24dp"
@@ -36,6 +38,9 @@
             android:id="@+id/nav_Donate"
             android:icon="@drawable/ic_money"
             android:title="Donate Now" />
+    </group>
+    <group
+        android:id="@+id/menu_bottom">
         <item
             android:id="@+id/nav_Contact"
             android:icon="@drawable/ic_contacts_black_24dp"
