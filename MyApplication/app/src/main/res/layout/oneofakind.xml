@@ -129,38 +129,6 @@
                 </LinearLayout>
 
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <ImageButton
-                        android:id="@+id/nav_machinelearning"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_marginLeft="25dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/cad"
-                        android:onClick="switchScreen"
-                        tools:layout_editor_absoluteX="0dp"
-                        tools:layout_editor_absoluteY="374dp" />
-
-
-                    <TextView
-                        android:id="@+id/text11"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/franklin_gothic_book_regular"
-                        android:padding="10dp"
-                        android:text="BraveTheFuture with UOIT with Machine Learning!"
-                        android:textAlignment="center"
-                        android:textSize="18sp"
-                        tools:layout_editor_absoluteX="100dp"
-                        tools:layout_editor_absoluteY="332dp" />
-
-                </LinearLayout>
-
             </LinearLayout>
 
         </ScrollView>
