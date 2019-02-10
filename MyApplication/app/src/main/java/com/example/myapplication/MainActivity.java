@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -80,7 +81,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_tele)).commit();
                 history.push(R.layout.individual_tele);
                 break;
-
+            case R.id.nav_Donate:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_donate)).commit();
 
         }
     }
@@ -118,6 +120,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Uri uri = Uri.parse(videoPath);
         videoview.setVideoURI(uri);
         videoview.start();
+    }
+
+    public void launchDonate(){
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://uoit.ca/payment_gateways/advancement/donations/index.php"));
+        startActivity(browserIntent);
     }
 
     @Override
