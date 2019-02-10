@@ -36,52 +36,32 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
         public void switchScreen(View button){
-        switch(button.getId()){
-            //case R.id.nav_bravethefuture:
-                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_btf)).commit();
-                //history.push(R.layout.individual_btf);
-                //break;
-//            case R.id.nav_studentlife:
-//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_durhamtransfer)).commit();
-//                //history.push(R.layout.individual_durhamtransfer);
+//        switch(button.getId()){
+//            case R.id.:
+//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_labs)).commit();
 //                break;
-            case R.id.nav_labs:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_labs)).commit();
-                //history.push(R.layout.individual_labs);
-                break;
-            //case R.id.nav_motorsports:
-                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_motorsports)).commit();
-                //history.push(R.layout.individual_motorsports);
-                //break;
-            //case R.id.nav_pass:
-                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_pass)).commit();
-                //history.push(R.layout.individual_pass);
-                //break;
-            //case R.id.nav_ri3d:
-                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_ri3d)).commit();
-                //history.push(R.layout.individual_ri3d);
-                //break;
-            //case R.id.nav_sami:
-                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_sami)).commit();
-                //history.push(R.layout.individual_sami);
-                //break;
-            //case R.id.nav_schoolmap:
-                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Map()).commit();
-
-                //break;
-            case R.id.nav_software:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new VirtualTourAce()).commit();
-                //history.push(R.layout.individual_soft);
-                break;
-
-            case R.id.nav_tele:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_tele)).commit();
-                //history.push(R.layout.individual_tele);
-                break;
-            case R.id.nav_Donate:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_donate)).commit();
-
-        }
+//            case R.id.:
+//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_soft)).commit();
+//                break;
+//            case R.id.:
+//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_ri3d)).commit();
+//                break;
+//            case R.id.:
+//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_sami)).commit();
+//                break;
+//            case R.id.:
+//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Map()).commit();
+//                break;
+//            case R.id.:
+//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new VirtualTourAce()).commit();
+//                break;
+//            case R.id.:
+//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_tele)).commit();
+//                break;
+//            case R.id.:
+//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_donate)).commit();
+//
+//        }
     }
 
     @Override
