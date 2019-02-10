@@ -114,9 +114,9 @@
 
                     <TextView
                         android:id="@+id/text9"
-                        android:layout_width="315dp"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="28dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
                         android:layout_weight="1"
                         android:fontFamily="@font/franklin_gothic_book_regular"
                         android:textAlignment="center"
