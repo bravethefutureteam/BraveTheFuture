@@ -79,7 +79,7 @@
                         tools:layout_editor_absoluteY="332dp" />
 
                     <ImageButton
-                        android:id="@+id/nav_ewb"
+                        android:id="@+id/nav_testimonials"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
@@ -97,7 +97,7 @@
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:id="@+id/nav_sami"
+                        android:id="@+id/nav_byoc"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
@@ -138,7 +138,7 @@
                         tools:layout_editor_absoluteY="332dp" />
 
                     <ImageButton
-                        android:id="@+id/nav_dtp"
+                        android:id="@+id/nav_sami"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
@@ -150,6 +150,37 @@
 
 
                 </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:text="Looking to transfer from UOIT to Durham or Durham to UOIT? Brave The Future with our bridge programs!"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="100dp"
+                        tools:layout_editor_absoluteY="332dp" />
+
+                    <ImageButton
+                        android:id="@+id/nav_durhamtransit"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="25dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/cad"
+                        android:onClick="switchScreen"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="374dp" />
+
+
+                </LinearLayout>
+
 
 
             </LinearLayout>

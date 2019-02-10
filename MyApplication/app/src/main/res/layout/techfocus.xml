@@ -39,7 +39,7 @@
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:id="@+id/nav_tech"
+                        android:id="@+id/nav_motorsports"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
@@ -69,7 +69,7 @@
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:id="@+id/nav_library"
+                        android:id="@+id/nav_tele"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
@@ -99,7 +99,97 @@
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:id="@+id/nav_motorsports"
+                        android:id="@+id/nav_library"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="25dp"
+                        android:onClick="switchScreen"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/cad"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="374dp" />
+
+
+                    <TextView
+                        android:id="@+id/text10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:text="Brave the electric Future with Motorsports! Build a car from scratch!"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="100dp"
+                        tools:layout_editor_absoluteY="332dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/nav_forensic"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="25dp"
+                        android:onClick="switchScreen"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/cad"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="374dp" />
+
+
+                    <TextView
+                        android:id="@+id/text10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:text="Brave the electric Future with Motorsports! Build a car from scratch!"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="100dp"
+                        tools:layout_editor_absoluteY="332dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/nav_nuclear"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="25dp"
+                        android:onClick="switchScreen"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/cad"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="374dp" />
+
+
+                    <TextView
+                        android:id="@+id/text10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:text="Brave the electric Future with Motorsports! Build a car from scratch!"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="100dp"
+                        tools:layout_editor_absoluteY="332dp" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/nav_ace"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"

@@ -39,7 +39,7 @@
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:id="@+id/nav_alumni"
+                        android:id="@+id/nav_ewb"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
@@ -79,7 +79,7 @@
                         tools:layout_editor_absoluteY="332dp" />
 
                     <ImageButton
-                        android:id="@+id/nav_events"
+                        android:id="@+id/nav_coop"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
@@ -97,7 +97,7 @@
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:id="@+id/nav_origin"
+                        android:id="@+id/nav_teaching"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
