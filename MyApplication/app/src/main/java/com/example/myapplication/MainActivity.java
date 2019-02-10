@@ -5,6 +5,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -22,7 +23,7 @@ import java.util.Stack;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    private Stack<Pages> history;
+    private Stack<Fragment> history;
 
     private DrawerLayout drawer;
     private Button playButton;
@@ -31,75 +32,92 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     public void back(View button){
         if (history.size() > 0){
-           //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(history.pop())).commit();
+           getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,history.pop()).commit();
         }
     }
 
         public void switchScreen(View button){
+        Fragment f;
         switch(button.getId()){
             case R.id.nav_ace:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new VirtualTourAce()).commit();
-                history.push(Pages.ACE);
+                f = new VirtualTourAce();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+                //history.push(f);
                 break;
             case R.id.nav_byoc:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_byoc)).commit();
-                history.push(Pages.BRING_YOUR_ON_CHANGE);
+                f = new basicFragment(R.layout.individual_byoc);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+                //history.push(f);
                 break;
             case R.id.nav_coop:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_ri3d)).commit();
-                history.push(Pages.COOP);
+                f = new basicFragment(R.layout.individual_ri3d);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+                //history.push(f);
                 break;
             case R.id.nav_durhamtransit:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_durhamtransfer)).commit();
-                history.push(Pages.DURHAM_TRANSFER_PROGRAMS);
+                f = new basicFragment(R.layout.individual_durhamtransfer);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+                //history.push(f);
                 break;
             case R.id.nav_ewb:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_ewb)).commit();
-                history.push(Pages.EWB);
+                f = new basicFragment(R.layout.individual_ewb);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+                //history.push(f);
                 break;
             case R.id.nav_forensic:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_forensic)).commit();
-                history.push(Pages.FORENSIC_BULDING);
+                f = new basicFragment(R.layout.individual_forensic);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+                //history.push(f);
                 break;
             case R.id.nav_iot:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_iot)).commit();
-                history.push(Pages.IOT);
+                f = new basicFragment(R.layout.individual_iot);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+                //history.push(f);
                 break;
             case R.id.nav_library:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_library)).commit();
-                history.push(Pages.LIBRARY);
+                f = new basicFragment(R.layout.individual_library);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+                //history.push(f);
                 break;
             case R.id.nav_motorsports:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_motorsports)).commit();
-                history.push(Pages.MOTORSPORTS);
+                f = new basicFragment(R.layout.individual_motorsports);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+                //history.push(f);
                 break;
             case R.id.nav_nuclear:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_erc)).commit();
-                history.push(Pages.NUCLEAR_POWER);
+                f = new basicFragment(R.layout.individual_erc);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+                //history.push(f);
                 break;
             case R.id.nav_research:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_research)).commit();
-                history.push(Pages.RESEARCH_PROFESSORS);
+                f = new basicFragment(R.layout.individual_research);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+                //history.push(f);
                 break;
             case R.id.nav_ri3d:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_ri3d)).commit();
-                history.push(Pages.RI3D);
+                f = new basicFragment(R.layout.individual_ri3d);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+                //history.push(f);
                 break;
             case R.id.nav_sami:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_sami)).commit();
-                history.push(Pages.SAMI);
+                f = new basicFragment(R.layout.individual_sami);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+                //history.push(f);
                 break;
             case R.id.nav_teaching:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_teaching)).commit();
-                history.push(Pages.TEACHING_PROFESSORS);
+                f = new basicFragment(R.layout.individual_teaching);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+                //history.push(f);
                 break;
             case R.id.nav_testimonials:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_testimonials)).commit();
-                history.push(Pages.TESTIMONIALS);
+                f = new basicFragment(R.layout.individual_testimonials);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+                //history.push(f);
                 break;
             case R.id.nav_wie:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_wie)).commit();
-                history.push(Pages.WIE);
+                f = new basicFragment(R.layout.individual_wie);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+                //history.push(f);
                 break;
         }
     }
@@ -183,7 +201,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
     }
 
-    public Object switchLayout(Pages p){
+    public Fragment pagetoLayoutObject(Pages p){
         switch (p){
             case HOME:
                 return new basicFragment(R.layout.app_bar_main);
@@ -214,23 +232,21 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case TELE:
                 return new basicFragment(R.layout.individual_tele);
             case LIBRARY:
-                //return new basicFragment(R.layout.library);
+                return new basicFragment(R.layout.individual_library);
             case FORENSIC_BULDING:
-                //return new basicFragment(R.layout.individal_forensicbuilding);
+                return new basicFragment(R.layout.individual_forensic);
             case NUCLEAR_POWER:
-                //return new basicFragment(R.layout.nuclearpower);
+                return new basicFragment(R.layout.individual_erc);
             case ACE:
-                //return new basicFragment(R.layout.ace);
+                new VirtualTourAce();
             case ONE_OF_A_KIND_RESEARCH:
                 return new basicFragment(R.layout.oneofakind);
             case RI3D:
                 return new basicFragment(R.layout.individual_ri3d);
             case RESEARCH_PROFESSORS:
-                //return new basicFragment(R.layout.researching);
+                return new basicFragment(R.layout.individual_research);
             case IOT:
                 return new basicFragment(R.layout.individual_iot);
-            case ML:
-                //return new basicFragment(R.layout.ml);
         }
         return null;
     }
