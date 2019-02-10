@@ -182,10 +182,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         startActivity(browserIntent);
     }
 
-    public void launchSurvey(View z){
-        Fragment f;
-        f = new basicFragment(R.layout.app_bar_main);
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+    public void launchAceResearch(View v){
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://ace.uoit.ca/index.php"));
+        startActivity(browserIntent);
+    }
+
+    public void launchCerlResearch(View v){
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://uoit.ca/about/campus-buildings/north-oshawa/clean-energy-research-laboratory.php"));
+        startActivity(browserIntent);
+    }
+
+    public void launchCmccResearch(View v){
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.cdpr-research.org"));
+        startActivity(browserIntent);
     }
 
     public void launchContact(){
