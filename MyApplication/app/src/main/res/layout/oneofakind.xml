@@ -11,127 +11,124 @@
         android:layout_height="760dp"
         tools:layout_editor_absoluteY="91dp">
 
-        <ScrollView
-            android:layout_width="410dp"
-            android:layout_height="642dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+        <ImageButton
+            android:id="@+id/nav_iot"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="17dp"
+            android:onClick="switchScreen"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cad"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider5" />
+
+        <TextView
+            android:id="@+id/text10"
+            android:layout_width="261dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/franklin_gothic_book_regular"
+            android:padding="10dp"
+            android:text="Dive into the Internet of Things and BraveTheFuture!"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/nav_iot"
+            app:layout_constraintTop_toBottomOf="@+id/divider5" />
+
+        <TextView
+            android:id="@+id/text9"
+            android:layout_width="250dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="3dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/franklin_gothic_book_regular"
+            android:text="Professional Research done by Professors at UOIT"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/nav_research"
+            app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+        <ImageButton
+            android:id="@+id/nav_research"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:onClick="switchScreen"
+            android:scaleType="center"
+            android:src="@drawable/moneylab"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+        <TextView
+            android:id="@+id/text7"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginTop="138dp"
+            android:fontFamily="@font/franklin_gothic_medium"
+            android:text="One-of-a-kind Research"
+            android:textAlignment="center"
+            android:textSize="32sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/nav_ri3d"
+            android:layout_width="156dp"
+            android:layout_height="152dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="15dp"
+            android:onClick="switchScreen"
+            android:scaleType="fitCenter"
+            android:src="@drawable/tele"
+            app:layout_constraintEnd_toStartOf="@+id/text8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text7" />
 
-                <TextView
-                    android:id="@+id/text7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="125dp"
-                    android:fontFamily="@font/franklin_gothic_medium"
-                    android:text="One-of-a-kind Research"
-                    android:textAlignment="center"
-                    android:textSize="32sp" />
+        <TextView
+            android:id="@+id/text8"
+            android:layout_width="257dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="52dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/franklin_gothic_book_regular"
+            android:padding="10dp"
+            android:text="RI3D-- Learn how to build and compete your own Robot!"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/nav_ri3d"
+            app:layout_constraintTop_toBottomOf="@+id/text7" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="395dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="8dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nav_ri3d" />
 
-                    <ImageButton
-                        android:id="@+id/nav_ri3d"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_marginLeft="25dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/tele"
-                        android:onClick="switchScreen"
-                        tools:layout_editor_absoluteX="200dp"
-                        tools:layout_editor_absoluteY="0dp" />
-
-                    <TextView
-                        android:id="@+id/text8"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/franklin_gothic_book_regular"
-                        android:padding="10dp"
-                        android:text="RI3D-- Learn how to build and compete your own Robot!"
-                        android:textAlignment="center"
-                        android:textSize="18sp"
-                        tools:layout_editor_absoluteX="100dp"
-                        tools:layout_editor_absoluteY="332dp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <ImageButton
-                        android:id="@+id/nav_research"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_marginLeft="25dp"
-                        android:onClick="switchScreen"
-                        android:scaleType="center"
-                        android:src="@drawable/moneylab"
-                        tools:layout_editor_absoluteX="200dp"
-                        tools:layout_editor_absoluteY="0dp" />
-
-                    <TextView
-                        android:id="@+id/text9"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="28dp"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/franklin_gothic_book_regular"
-                        android:text="Professional Research done by Professors at UOIT"
-                        android:textAlignment="center"
-                        android:textSize="18sp"
-                        tools:layout_editor_absoluteX="100dp"
-                        tools:layout_editor_absoluteY="332dp" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <ImageButton
-                        android:id="@+id/nav_iot"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_marginLeft="25dp"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/cad"
-                        android:onClick="switchScreen"
-                        tools:layout_editor_absoluteX="0dp"
-                        tools:layout_editor_absoluteY="374dp" />
-
-
-                    <TextView
-                        android:id="@+id/text10"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/franklin_gothic_book_regular"
-                        android:padding="10dp"
-                        android:text="Dive into the Internet of Things and BraveTheFuture!"
-                        android:textAlignment="center"
-                        android:textSize="18sp"
-                        tools:layout_editor_absoluteX="100dp"
-                        tools:layout_editor_absoluteY="332dp" />
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-        </ScrollView>
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="395dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="8dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nav_research" />
 
     </android.support.constraint.ConstraintLayout>
 
