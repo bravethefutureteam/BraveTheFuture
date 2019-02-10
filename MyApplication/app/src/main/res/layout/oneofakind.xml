@@ -1,6 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom">
 
-</android.support.constraint.ConstraintLayout>
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="760dp"
+        tools:layout_editor_absoluteY="91dp">
+
+        <ScrollView
+            android:layout_width="410dp"
+            android:layout_height="642dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="One-of-a-kind Research"
+                    android:textSize="32sp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="125dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/nav_tele"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="25dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/tele"
+                        android:onClick="switchScreen"
+                        tools:layout_editor_absoluteX="200dp"
+                        tools:layout_editor_absoluteY="0dp" />
+
+                    <TextView
+                        android:id="@+id/text8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:text="RI3D-- Learn how to build and compete your own Robot!"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="100dp"
+                        tools:layout_editor_absoluteY="332dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/nav_labs"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="25dp"
+                        android:onClick="switchScreen"
+                        android:scaleType="center"
+                        android:src="@drawable/moneylab"
+                        tools:layout_editor_absoluteX="200dp"
+                        tools:layout_editor_absoluteY="0dp" />
+
+                    <TextView
+                        android:id="@+id/text9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="28dp"
+                        android:layout_weight="1"
+                        android:text="Professional Research done by Professors at UOIT"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="100dp"
+                        tools:layout_editor_absoluteY="332dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/nav_software"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="25dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/cad"
+                        android:onClick="switchScreen"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="374dp" />
+
+
+                    <TextView
+                        android:id="@+id/text10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:text="Dive into the Internet of Things and BraveTheFuture!"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="100dp"
+                        tools:layout_editor_absoluteY="332dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/nav_software"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="25dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/cad"
+                        android:onClick="switchScreen"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="374dp" />
+
+
+                    <TextView
+                        android:id="@+id/text10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:text="BraveTheFuture with UOIT with Machine Learning!"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="100dp"
+                        tools:layout_editor_absoluteY="332dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>
