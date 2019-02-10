@@ -107,7 +107,7 @@
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/cad"
+                        android:src="@drawable/podium"
                         android:onClick="switchScreen"
                         tools:layout_editor_absoluteX="0dp"
                         tools:layout_editor_absoluteY="374dp" />
@@ -152,7 +152,7 @@
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/cad"
+                        android:src="@drawable/campusconnected"
                         android:onClick="switchScreen"
                         tools:layout_editor_absoluteX="0dp"
                         tools:layout_editor_absoluteY="374dp" />
@@ -184,7 +184,7 @@
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/cad"
+                        android:src="@drawable/bridge"
                         android:onClick="switchScreen"
                         tools:layout_editor_absoluteX="0dp"
                         tools:layout_editor_absoluteY="374dp" />
