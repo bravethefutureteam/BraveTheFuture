@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         videoview.start();
     }
 
-    public void launchDonate(){
+    public void launchDonate(View v){
         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://uoit.ca/payment_gateways/advancement/donations/index.php"));
         startActivity(browserIntent);
     }
