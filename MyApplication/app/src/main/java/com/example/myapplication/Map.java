@@ -115,6 +115,7 @@ public class Map extends Fragment implements OnMapReadyCallback {
         map.setMapType(GoogleMap.MAP_TYPE_HYBRID);
         map.setTrafficEnabled(true);
         map.moveCamera(CameraUpdateFactory.newLatLngZoom((uoitLocation),16));
+        Toast.makeText(getContext(), "Red markers designate existing buildings. Blue markers designate new buildings.", Toast.LENGTH_LONG).show();
 
         if (ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getActivity(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             return;
