@@ -113,12 +113,17 @@
                         tools:layout_editor_absoluteY="0dp" />
 
                     <TextView
-                        android:id="@+id/text"
-                        android:layout_width="wrap_content"
+                        android:id="@+id/text18"
+                        android:layout_width="301dp"
                         android:layout_height="match_parent"
+                        android:layout_marginLeft="28dp"
+                        android:layout_weight="1"
                         android:fontFamily="@font/franklin_gothic_book_regular"
-                        android:textSize="20sp"
-                        tools:text="Learn more about our Technology Enriched Learning Enviornment (TELE) and what we offer to help students succeed!" />
+                        android:text="Learn more about our Technology Enriched Learning Enviornment (TELE) and what we offer to help students succeed!"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="100dp"
+                        tools:layout_editor_absoluteY="332dp" />
 
                 </LinearLayout>
 
@@ -239,7 +244,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="10dp"
-                        android:text="Brave the Future with leading edge facilities for Nuclear Engineering!"
+                        android:text="Brave the Future with ACE!"
                         android:textAlignment="center"
                         android:textSize="18sp"
                         tools:layout_editor_absoluteX="100dp"
