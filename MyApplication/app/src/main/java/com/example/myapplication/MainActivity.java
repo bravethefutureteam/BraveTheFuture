@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     private Stack<Fragment> history = new Stack<Fragment>();
 
+    
     private DrawerLayout drawer;
     private Button playButton;
     private VideoView videoview;
