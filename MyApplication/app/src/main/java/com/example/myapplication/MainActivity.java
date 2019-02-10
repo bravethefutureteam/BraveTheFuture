@@ -166,6 +166,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Uri uri = Uri.parse(videoPath);
         videoview.setVideoURI(uri);
         videoview.start();
+        videoview.seekTo(1);
     }
 
     public void launchBYOC (View y){
