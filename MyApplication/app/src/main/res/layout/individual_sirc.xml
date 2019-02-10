@@ -21,7 +21,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical" >
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView2"
@@ -31,7 +31,7 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="90dp"
                     android:fontFamily="@font/franklin_gothic_medium"
-                    android:text="Energy Systems and Nuclear Science Research Centre (ERC)"
+                    android:text="Software and Informatics Research Centre (SIRC)"
                     android:textAlignment="center"
                     android:textSize="30sp"
                     android:textStyle="bold"
@@ -41,15 +41,15 @@
 
                 <ImageView
                     android:id="@+id/imageView2"
-                    android:layout_width="272dp"
-                    android:layout_height="146dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp"
                     android:layout_marginStart="63dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="63dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView2"
-                    app:srcCompat="@drawable/erc" />
+                    app:srcCompat="@drawable/sirc" />
 
                 <TextView
                     android:id="@+id/textView3"
@@ -59,8 +59,8 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginEnd="35dp"
                     android:fontFamily="@font/franklin_gothic_book_regular"
-                    android:text="@string/erc"
-                    android:textSize="21sp"
+                    android:text="The Software and Informatics Research Centre (SIRC) accommodates the university’s need for new spaces for research, study and future active learning. Flexible learning spaces featuring multiple seating configurations, room divisibility and the newest audio-visual technology. Approximately 280 square metres of student study space. Engineering labs in electronics, mechatronics, and robotics as well as a design/makerspace featuring 3D printers, and soldering and electronics stations."
+                    android:textSize="22sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/imageView2" />
