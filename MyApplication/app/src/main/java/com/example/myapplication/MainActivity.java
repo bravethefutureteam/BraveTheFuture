@@ -3,6 +3,7 @@ package com.example.myapplication;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
@@ -15,6 +16,7 @@ import android.text.Layout;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
@@ -30,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private Button playButton;
     private VideoView videoview;
     private MediaController mediaController;
+    private ImageView imageview;
 
     public void back(View button){
         if (history.size() > 0){
@@ -144,8 +147,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        videoview.seekTo(50);
-
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
@@ -154,10 +155,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new basicFragment(R.layout.app_bar_main)).commit();
            navigationView.setCheckedItem(R.id.nav_Home);
        }
+
     }
 
     public void playVideo(View v){
-        playButton = (Button) findViewById(R.id.playButton);
+        imageview = (ImageView) findViewById(R.id.imageView5);
         videoview = (VideoView) findViewById(R.id.videoview);
         mediaController = new MediaController(this);
         mediaController.setAnchorView(videoview);
@@ -166,8 +168,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         String videoPath = "android.resource://com.example.myapplication/"+R.raw.btf_promo;
         Uri uri = Uri.parse(videoPath);
         videoview.setVideoURI(uri);
+        imageview.setVisibility(View.GONE);
         videoview.start();
-
     }
 
     public void launchBYOC (View y){
