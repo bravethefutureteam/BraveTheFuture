@@ -39,7 +39,7 @@
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:id="@+id/nav_tele"
+                        android:id="@+id/nav_wie"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
@@ -79,7 +79,7 @@
                         tools:layout_editor_absoluteY="332dp" />
 
                     <ImageButton
-                        android:id="@+id/nav_labs"
+                        android:id="@+id/nav_ewb"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
@@ -97,7 +97,7 @@
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:id="@+id/nav_software"
+                        android:id="@+id/nav_sami"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
@@ -138,7 +138,7 @@
                         tools:layout_editor_absoluteY="332dp" />
 
                     <ImageButton
-                        android:id="@+id/nav_DTP"
+                        android:id="@+id/nav_dtp"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
