@@ -69,12 +69,15 @@
             android:id="@+id/text7"
             android:layout_width="match_parent"
             android:layout_height="47dp"
-            android:layout_marginTop="138dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginBottom="15dp"
             android:fontFamily="@font/franklin_gothic_medium"
             android:text="One-of-a-kind Research"
             android:textAlignment="center"
             android:textSize="32sp"
+            app:layout_constraintBottom_toTopOf="@+id/nav_ri3d"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
