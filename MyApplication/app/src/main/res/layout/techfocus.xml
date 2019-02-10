@@ -46,7 +46,7 @@
                         android:layout_marginLeft="25dp"
                         android:onClick="switchScreen"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/tele"
+                        android:src="@drawable/motorsports"
                         tools:layout_editor_absoluteX="200dp"
                         tools:layout_editor_absoluteY="0dp" />
 
@@ -71,13 +71,44 @@
                     android:orientation="horizontal">
 
                     <ImageButton
+                        android:id="@+id/nav_polonsky"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginLeft="25dp"
+                        android:onClick="switchScreen"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/polonsky2"
+                        tools:layout_editor_absoluteX="200dp"
+                        tools:layout_editor_absoluteY="0dp" />
+
+                    <TextView
+                        android:id="@+id/text14"
+                        android:layout_width="315dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="28dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/franklin_gothic_book_regular"
+                        android:text="Visit the library for a fantastic place to sit and study, and 3D print to your heart's extent!"
+                        android:textAlignment="center"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="100dp"
+                        tools:layout_editor_absoluteY="332dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageButton
                         android:id="@+id/nav_tele"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
                         android:onClick="switchScreen"
-                        android:scaleType="center"
-                        android:src="@drawable/moneylab"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/laptop"
                         tools:layout_editor_absoluteX="200dp"
                         tools:layout_editor_absoluteY="0dp" />
 
@@ -108,7 +139,7 @@
                         android:layout_marginLeft="25dp"
                         android:onClick="switchScreen"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/cad"
+                        android:src="@drawable/library"
                         tools:layout_editor_absoluteX="0dp"
                         tools:layout_editor_absoluteY="374dp" />
 
@@ -139,7 +170,7 @@
                         android:layout_marginLeft="25dp"
                         android:onClick="switchScreen"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/cad"
+                        android:src="@drawable/fakecrime"
                         tools:layout_editor_absoluteX="0dp"
                         tools:layout_editor_absoluteY="374dp" />
 
@@ -169,7 +200,7 @@
                         android:layout_marginLeft="25dp"
                         android:onClick="switchScreen"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/cad"
+                        android:src="@drawable/nuclear"
                         tools:layout_editor_absoluteX="0dp"
                         tools:layout_editor_absoluteY="374dp" />
 
@@ -199,7 +230,7 @@
                         android:layout_marginLeft="25dp"
                         android:onClick="switchScreen"
                         android:scaleType="fitCenter"
-                        android:src="@drawable/cad"
+                        android:src="@drawable/aceoverview"
                         tools:layout_editor_absoluteX="0dp"
                         tools:layout_editor_absoluteY="374dp" />
 
