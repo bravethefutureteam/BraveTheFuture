@@ -15,9 +15,19 @@
         android:background="#ffffff">
 
         <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="407dp"
+            android:layout_height="161dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:srcCompat="@drawable/refractions" />
+
+        <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="271dp"
-            android:layout_height="151dp"
+            android:layout_width="246dp"
+            android:layout_height="133dp"
             android:layout_marginStart="63dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="63dp"
@@ -51,6 +61,7 @@
             android:layout_marginEnd="35dp"
             android:fontFamily="@font/franklin_gothic_book_regular"
             android:text="To keep pace with today's ever-changing news cycle, our enhanced Expert Centre is your source to discover the university’s diverse collection of faculty expertise and thought leadership. The expert profiles feature rich multimedia content, detailed biographies and trending topic tags that will help you find an expert to provide analysis, commentary and insight on today's most engaging industry trends and developments."
+            android:textAlignment="center"
             android:textSize="22sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
