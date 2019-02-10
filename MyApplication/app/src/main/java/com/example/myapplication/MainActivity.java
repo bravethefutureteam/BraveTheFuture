@@ -167,6 +167,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         startActivity(browserIntent);
     }
 
+    public void launchSurvey(View z){
+        Fragment f;
+        f = new basicFragment(R.layout.app_bar_main);
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+    }
+
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item){
         Fragment f;
@@ -195,6 +201,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 f = new basicFragment(R.layout.oneofakind);
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
                 history.push(f);
+                break;
+            case R.id.nav_Survey:
+                    f = new basicFragment(R.layout.individual_survey);
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+                    history.push(f);
+
+
                 break;
             case R.id.nav_Map:
                 f = new Map();

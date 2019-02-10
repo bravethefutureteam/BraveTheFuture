@@ -33,6 +33,10 @@
             android:icon="@drawable/ic_build_black_24dp"
             android:title="New Developments" />
         <item
+            android:id="@+id/nav_Survey"
+            android:icon="@drawable/ic_note_black_24dp"
+            android:title="Survey" />
+        <item
             android:id="@+id/nav_Donate"
             android:icon="@drawable/ic_money"
             android:title="Donate Now" />
