@@ -157,6 +157,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         videoview.start();
     }
 
+    public void launchBYOC (View y){
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://events.uoit.ca/submit-event.php"));
+        startActivity(browserIntent);
+    }
+
     public void launchDonate(View v){
         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://uoit.ca/payment_gateways/advancement/donations/index.php"));
         startActivity(browserIntent);
