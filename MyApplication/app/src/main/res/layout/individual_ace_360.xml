@@ -32,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="5dp"
             android:layout_marginEnd="32dp"
             android:text="ACE Climatic Wind Tunnel"
             android:textSize="30sp"
@@ -43,7 +43,7 @@
         <com.google.vr.sdk.widgets.pano.VrPanoramaView
             android:id="@+id/vrPanoramaView"
             android:layout_width="match_parent"
-            android:layout_height="351dp"
+            android:layout_height="400dp"
             android:layout_marginTop="22dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
