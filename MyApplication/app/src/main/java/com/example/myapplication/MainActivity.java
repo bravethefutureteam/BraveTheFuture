@@ -197,7 +197,20 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 //return new basicFragment(R.layout.library);
             case FORENSIC_BULDING:
                 //return new basicFragment(R.layout.individal_forensicbuilding);
-                
+            case NUCLEAR_POWER:
+                //return new basicFragment(R.layout.nuclearpower);
+            case ACE:
+                //return new basicFragment(R.layout.ace);
+            case ONE_OF_A_KIND_RESEARCH:
+                return new basicFragment(R.layout.oneofakind);
+            case RI3D:
+                return new basicFragment(R.layout.individual_ri3d);
+            case RESEARCH_PROFESSORS:
+                //return new basicFragment(R.layout.researching);
+            case IOT:
+                return new basicFragment(R.layout.individual_iot);
+            case ML:
+                //return new basicFragment(R.layout.ml);
         }
         return null;
     }
