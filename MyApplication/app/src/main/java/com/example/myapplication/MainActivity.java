@@ -122,7 +122,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         videoview.start();
     }
 
-    public void launchDonate(){
+    public void launchDonate(View v){
         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://uoit.ca/payment_gateways/advancement/donations/index.php"));
         startActivity(browserIntent);
     }
@@ -148,7 +148,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.newdevelopments)).commit();
                 break;
             case R.id.nav_Donate:
-                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.Donate)).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_donate)).commit();
                 break;
         }
 
@@ -165,8 +165,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
     }
 
-    public enum Page {
-        HOME, EXTRA_CURRICULARS, TECH_FOCUS, MENTAL_HEALTH, CONNECTED_CAMPUS, MAP, STUDENT_LIFE, VIRTUAL_TOUR, NEW_DEVELOPMENTS,
-        AVAILABLE, BRAVE_THE_FUTURE, CALENDAR, CLASS_AVAILABLE
+    public enum Pages {
+        HOME, YOUNG_MINDS, WIE, TESTIMONIALS, BRING_YOUR_ON_CHANGE, SAMI, DURHAM_TRANSFER_PROGRAMS, WORLD_CLASS, EWB, COOP, TEACHING_PROFESSORS, HIGH_TECH_FACILITIES,
+        MOTORSPORTS, TELE, THREE_D_PRINTERS, FORENSIC_BULDING, NUCLEAR_POWER, ACE, ONE_OF_A_KIND_RESEARCH, RI3D, RESEARCH_PROFESSORS, IOT, ML
     }
 }

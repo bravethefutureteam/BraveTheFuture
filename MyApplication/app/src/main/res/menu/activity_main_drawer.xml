@@ -40,7 +40,7 @@
         <item
             android:id="@+id/nav_Donate"
             android:icon="@drawable/ic_money"
-            android:title="Donate" />
+            android:title="Donate Now" />
     </group>
 
 </menu>
