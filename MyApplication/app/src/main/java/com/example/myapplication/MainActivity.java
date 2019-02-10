@@ -3,6 +3,7 @@ package com.example.myapplication;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
@@ -15,6 +16,7 @@ import android.text.Layout;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.MediaController;
 import android.widget.VideoView;
 
@@ -23,12 +25,14 @@ import java.util.Stack;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    private Stack<Fragment> history;
+    private Stack<Fragment> history = new Stack<Fragment>();
 
+    
     private DrawerLayout drawer;
     private Button playButton;
     private VideoView videoview;
     private MediaController mediaController;
+    private ImageView imageview;
 
     public void back(View button){
         if (history.size() > 0){
@@ -42,82 +46,92 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.nav_ace:
                 f = new VirtualTourAce();
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
-                //history.push(f);
+                history.push(f);
                 break;
             case R.id.nav_byoc:
                 f = new basicFragment(R.layout.individual_byoc);
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
-                //history.push(f);
+                history.push(f);
                 break;
             case R.id.nav_coop:
                 f = new basicFragment(R.layout.individual_ri3d);
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
-                //history.push(f);
+                history.push(f);
                 break;
             case R.id.nav_durhamtransit:
                 f = new basicFragment(R.layout.individual_durhamtransfer);
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
-                //history.push(f);
+                history.push(f);
                 break;
             case R.id.nav_ewb:
                 f = new basicFragment(R.layout.individual_ewb);
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
-                //history.push(f);
+                history.push(f);
                 break;
             case R.id.nav_forensic:
                 f = new basicFragment(R.layout.individual_forensic);
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
-                //history.push(f);
+                history.push(f);
                 break;
             case R.id.nav_iot:
                 f = new basicFragment(R.layout.individual_iot);
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
-                //history.push(f);
+                history.push(f);
                 break;
             case R.id.nav_library:
                 f = new basicFragment(R.layout.individual_library);
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
-                //history.push(f);
+                history.push(f);
                 break;
             case R.id.nav_motorsports:
                 f = new basicFragment(R.layout.individual_motorsports);
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
-                //history.push(f);
+                history.push(f);
                 break;
             case R.id.nav_nuclear:
                 f = new basicFragment(R.layout.individual_erc);
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
-                //history.push(f);
+                history.push(f);
+                break;
+            case R.id.nav_polonsky:
+                f = new VirtualTourPolonsky();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+                history.push(f);
                 break;
             case R.id.nav_research:
                 f = new basicFragment(R.layout.individual_research);
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
-                //history.push(f);
+                history.push(f);
                 break;
             case R.id.nav_ri3d:
                 f = new basicFragment(R.layout.individual_ri3d);
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
-                //history.push(f);
+                history.push(f);
                 break;
             case R.id.nav_sami:
                 f = new basicFragment(R.layout.individual_sami);
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
-                //history.push(f);
+                history.push(f);
                 break;
             case R.id.nav_teaching:
                 f = new basicFragment(R.layout.individual_teaching);
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
-                //history.push(f);
+                history.push(f);
+                break;
+            case R.id.nav_tele:
+                f = new basicFragment(R.layout.individual_tele);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+                history.push(f);
                 break;
             case R.id.nav_testimonials:
                 f = new basicFragment(R.layout.individual_testimonials);
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
-                //history.push(f);
+                history.push(f);
                 break;
             case R.id.nav_wie:
                 f = new basicFragment(R.layout.individual_wie);
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
-                //history.push(f);
+                history.push(f);
                 break;
         }
     }
@@ -133,7 +147,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
@@ -142,10 +155,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
            getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new basicFragment(R.layout.app_bar_main)).commit();
            navigationView.setCheckedItem(R.id.nav_Home);
        }
+
     }
 
     public void playVideo(View v){
-        playButton = (Button) findViewById(R.id.playButton);
+        imageview = (ImageView) findViewById(R.id.imageView5);
         videoview = (VideoView) findViewById(R.id.videoview);
         mediaController = new MediaController(this);
         mediaController.setAnchorView(videoview);
@@ -154,7 +168,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         String videoPath = "android.resource://com.example.myapplication/"+R.raw.btf_promo;
         Uri uri = Uri.parse(videoPath);
         videoview.setVideoURI(uri);
+        imageview.setVisibility(View.GONE);
         videoview.start();
+    }
+
+    public void launchBYOC (View y){
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://events.uoit.ca/submit-event.php"));
+        startActivity(browserIntent);
     }
 
     public void launchDonate(View v){
@@ -162,32 +182,64 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         startActivity(browserIntent);
     }
 
+    public void launchSurvey(View z){
+        Fragment f;
+        f = new basicFragment(R.layout.app_bar_main);
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+    }
+
+    public void launchContact(){
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://uoit.ca/contact-us.php"));
+        startActivity(browserIntent);
+    }
+
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item){
+        Fragment f;
         switch (item.getItemId()){
             case R.id.nav_Home:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.app_bar_main)).commit();
+                f = new basicFragment(R.layout.app_bar_main);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+                history.push(f);
                 break;
             case R.id.nav_BrilliantYoungMinds:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.youngminds)).commit();
+                f = new basicFragment(R.layout.youngminds);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+                history.push(f);
                 break;
             case R.id.nav_WorldClassTalent:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.worldclass)).commit();
+                f = new basicFragment(R.layout.worldclass);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+                history.push(f);
                 break;
             case R.id.nav_HighTechFacilities:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.techfocus)).commit();
+                f = new basicFragment(R.layout.techfocus);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+                history.push(f);
                 break;
             case R.id.nav_OneOfAKindResearch:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.oneofakind)).commit();
+                f = new basicFragment(R.layout.oneofakind);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+                history.push(f);
+                break;
+            case R.id.nav_Survey:
+                f = new basicFragment(R.layout.individual_survey);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+                history.push(f);
                 break;
             case R.id.nav_Map:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Map()).commit();
+                f = new Map();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+                history.push(f);
                 break;
             case R.id.nav_Donate:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_donate)).commit();
+                f = new basicFragment(R.layout.individual_donate);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+                history.push(f);
                 break;
+            case R.id.nav_Contact:
+                launchContact();
         }
-
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
@@ -197,62 +249,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+            //if (history.size() > 0){
+            //    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,history.pop()).commit();
+            //}
+            //super.onBackPressed();
         }
-    }
-
-    public Fragment pagetoLayoutObject(Pages p){
-        switch (p){
-            case HOME:
-                return new basicFragment(R.layout.app_bar_main);
-            case YOUNG_MINDS:
-                return new basicFragment(R.layout.youngminds);
-            case WIE:
-                return new basicFragment(R.layout.individual_wie);
-            case TESTIMONIALS:
-                return new basicFragment(R.layout.individual_testimonials);
-            case BRING_YOUR_ON_CHANGE:
-                return new basicFragment(R.layout.individual_byoc);
-            case SAMI:
-                return new basicFragment(R.layout.individual_sami);
-            case DURHAM_TRANSFER_PROGRAMS:
-                return new basicFragment(R.layout.individual_durhamtransfer);
-            case WORLD_CLASS:
-                return new basicFragment(R.layout.worldclass);
-            case EWB:
-                return new basicFragment(R.layout.individual_ewb);
-            case COOP:
-                return new basicFragment(R.layout.individual_coop);
-            case TEACHING_PROFESSORS:
-                return new basicFragment(R.layout.individual_teaching);
-            case HIGH_TECH_FACILITIES:
-                return new basicFragment(R.layout.techfocus);
-            case MOTORSPORTS:
-                return new basicFragment(R.layout.individual_motorsports);
-            case TELE:
-                return new basicFragment(R.layout.individual_tele);
-            case LIBRARY:
-                return new basicFragment(R.layout.individual_library);
-            case FORENSIC_BULDING:
-                return new basicFragment(R.layout.individual_forensic);
-            case NUCLEAR_POWER:
-                return new basicFragment(R.layout.individual_erc);
-            case ACE:
-                new VirtualTourAce();
-            case ONE_OF_A_KIND_RESEARCH:
-                return new basicFragment(R.layout.oneofakind);
-            case RI3D:
-                return new basicFragment(R.layout.individual_ri3d);
-            case RESEARCH_PROFESSORS:
-                return new basicFragment(R.layout.individual_research);
-            case IOT:
-                return new basicFragment(R.layout.individual_iot);
-        }
-        return null;
-    }
-
-    public enum Pages {
-        HOME, YOUNG_MINDS, WIE, TESTIMONIALS, BRING_YOUR_ON_CHANGE, SAMI, DURHAM_TRANSFER_PROGRAMS, WORLD_CLASS, EWB, COOP, TEACHING_PROFESSORS, HIGH_TECH_FACILITIES,
-        MOTORSPORTS, TELE, LIBRARY, FORENSIC_BULDING, NUCLEAR_POWER, ACE, ONE_OF_A_KIND_RESEARCH, RI3D, RESEARCH_PROFESSORS, IOT, ML
     }
 }
