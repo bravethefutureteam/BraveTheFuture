@@ -28,10 +28,11 @@
                     android:id="@+id/text7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="125dp"
+                    android:fontFamily="@font/franklin_gothic_medium"
                     android:text="One-of-a-kind Research"
-                    android:textSize="32sp"
                     android:textAlignment="center"
-                    android:layout_marginTop="125dp"/>
+                    android:textSize="32sp" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -54,6 +55,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:fontFamily="@font/franklin_gothic_book_regular"
                         android:padding="10dp"
                         android:text="RI3D-- Learn how to build and compete your own Robot!"
                         android:textAlignment="center"
@@ -85,6 +87,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="28dp"
                         android:layout_weight="1"
+                        android:fontFamily="@font/franklin_gothic_book_regular"
                         android:text="Professional Research done by Professors at UOIT"
                         android:textAlignment="center"
                         android:textSize="18sp"
@@ -115,6 +118,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/franklin_gothic_book_regular"
                         android:padding="10dp"
                         android:text="Dive into the Internet of Things and BraveTheFuture!"
                         android:textAlignment="center"
@@ -147,6 +151,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/franklin_gothic_book_regular"
                         android:padding="10dp"
                         android:text="BraveTheFuture with UOIT with Machine Learning!"
                         android:textAlignment="center"
