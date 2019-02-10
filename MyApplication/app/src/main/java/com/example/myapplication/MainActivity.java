@@ -183,6 +183,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
     }
 
+    public void launchContact(){
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://uoit.ca/contact-us.php"));
+        startActivity(browserIntent);
+    }
+
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item){
         Fragment f;
@@ -227,6 +232,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
                 history.push(f);
                 break;
+            case R.id.nav_Contact:
+                launchContact();
         }
         drawer.closeDrawer(GravityCompat.START);
         return true;
