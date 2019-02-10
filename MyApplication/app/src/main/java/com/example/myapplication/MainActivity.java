@@ -36,32 +36,59 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
         public void switchScreen(View button){
-//        switch(button.getId()){
-//            case R.id.:
-//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_labs)).commit();
-//                break;
-//            case R.id.:
-//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_soft)).commit();
-//                break;
-//            case R.id.:
-//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_ri3d)).commit();
-//                break;
-//            case R.id.:
-//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_sami)).commit();
-//                break;
-//            case R.id.:
-//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Map()).commit();
-//                break;
-//            case R.id.:
-//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new VirtualTourAce()).commit();
-//                break;
-//            case R.id.:
-//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_tele)).commit();
-//                break;
-//            case R.id.:
-//                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_donate)).commit();
-//
-//        }
+        switch(button.getId()){
+            case R.id.nav_ace:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new VirtualTourAce()).commit();
+                break;
+            case R.id.nav_byoc:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_byoc)).commit();
+                break;
+            case R.id.nav_coop:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_ri3d)).commit();
+                break;
+            case R.id.nav_durhamtransit:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_durhamtransfer)).commit();
+                break;
+            case R.id.nav_ewb:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_ewb)).commit();
+                break;
+            case R.id.nav_forensic:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_forensic)).commit();
+                break;
+            case R.id.nav_iot:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_iot)).commit();
+                break;
+            case R.id.nav_library:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_library)).commit();
+                break;
+            case R.id.nav_machinelearning:
+                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_machinelearning)).commit();
+                break;
+            case R.id.nav_motorsports:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_motorsports)).commit();
+                break;
+            case R.id.nav_nuclear:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_erc)).commit();
+                break;
+            case R.id.nav_research:
+                //getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_research)).commit();
+                break;
+            case R.id.nav_ri3d:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_ri3d)).commit();
+                break;
+            case R.id.nav_sami:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_sami)).commit();
+                break;
+            case R.id.nav_teaching:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_teaching)).commit();
+                break;
+            case R.id.nav_testimonials:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_testimonials)).commit();
+                break;
+            case R.id.nav_wie:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new basicFragment(R.layout.individual_wie)).commit();
+                break;
+        }
     }
 
     @Override
