@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     private Stack<Fragment> history = new Stack<Fragment>();
 
+    
     private DrawerLayout drawer;
     private Button playButton;
     private VideoView videoview;
@@ -86,6 +87,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.nav_nuclear:
                 f = new basicFragment(R.layout.individual_erc);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+                history.push(f);
+                break;
+            case R.id.nav_polonsky:
+                f = new VirtualTourPolonsky();
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
                 history.push(f);
                 break;
@@ -178,6 +184,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
     }
 
+    public void launchContact(){
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://uoit.ca/contact-us.php"));
+        startActivity(browserIntent);
+    }
+
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item){
         Fragment f;
@@ -208,11 +219,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 history.push(f);
                 break;
             case R.id.nav_Survey:
-                    f = new basicFragment(R.layout.individual_survey);
-                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
-                    history.push(f);
-
-
+                f = new basicFragment(R.layout.individual_survey);
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
+                history.push(f);
                 break;
             case R.id.nav_Map:
                 f = new Map();
@@ -224,6 +233,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
                 history.push(f);
                 break;
+            case R.id.nav_Contact:
+                launchContact();
         }
         drawer.closeDrawer(GravityCompat.START);
         return true;

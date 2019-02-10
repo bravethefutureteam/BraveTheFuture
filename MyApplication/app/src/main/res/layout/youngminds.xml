@@ -120,7 +120,7 @@
                         android:layout_weight="1"
                         android:fontFamily="@font/franklin_gothic_book_regular"
                         android:padding="10dp"
-                        android:text="Student Assistance for Mental Instability. Brave The Future by taking charge and help your peers succeed alongside you"
+                        android:text="Think something is missing from our campus? We encourage people to bring their own ideas and help make our campus even more inviting!"
                         android:textAlignment="center"
                         android:textSize="18sp"
                         tools:layout_editor_absoluteX="100dp"
