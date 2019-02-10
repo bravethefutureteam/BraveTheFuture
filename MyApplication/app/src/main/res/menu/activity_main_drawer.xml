@@ -9,19 +9,19 @@
             android:icon="@drawable/ic_home_black_24dp"
             android:title="Home" />
         <item
-            android:id="@+id/nav_studentlife"
+            android:id="@+id/nav_BrilliantYoungMinds"
             android:icon="@drawable/ic_school_black_24dp"
             android:title="Brilliant Young Minds" />
         <item
-            android:id="@+id/nav_Talent"
+            android:id="@+id/nav_WorldClassTalent"
             android:icon="@drawable/ic_language_black_24dp"
             android:title="World Class Talent" />
         <item
-            android:id="@+id/nav_TechFocus"
+            android:id="@+id/nav_HighTechFacilities"
             android:icon="@drawable/ic_code_black_24dp"
             android:title="High-tech Facilities" />
         <item
-            android:id="@+id/nav_Research"
+            android:id="@+id/nav_OneOfAKindResearch"
             android:icon="@drawable/ic_timeline_black_24dp"
             android:title="One-of-a-kind Research" />
         <item
