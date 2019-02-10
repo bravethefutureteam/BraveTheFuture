@@ -28,7 +28,7 @@
                     android:id="@+id/text7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Technologically Driven"
+                    android:text="World Class Recognition"
                     android:textSize="32sp"
                     android:textAlignment="center"
                     android:layout_marginTop="125dp"/>
@@ -55,7 +55,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="10dp"
-                        android:text="TELE: Technologically Enriched Learning Environment"
+                        android:text="Brave The Future with some of our success stories!"
                         android:textSize="18sp"
                         tools:layout_editor_absoluteX="100dp"
                         tools:layout_editor_absoluteY="332dp" />
@@ -73,7 +73,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:layout_marginLeft="28dp"
-                        android:text="Hands on Labs"
+                        android:text="Engsoc, Engineers without Borders, a fantastic Student Union Brave The Future of UOIT"
                         android:textSize="18sp"
                         tools:layout_editor_absoluteX="100dp"
                         tools:layout_editor_absoluteY="332dp" />
@@ -111,10 +111,21 @@
                     <TextView
                         android:id="@+id/text10"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="77dp"
                         android:layout_weight="1"
                         android:padding="10dp"
-                        android:text="Access to tens of thousands of dollars worth of Software"
+                        android:text="Coop on YOUR terms"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="100dp"
+                        tools:layout_editor_absoluteY="332dp" />
+
+                    <TextView
+                        android:id="@+id/text11"
+                        android:layout_width="match_parent"
+                        android:layout_height="99dp"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:text="Brave the past to Brave The Future with this compelling origin story"
                         android:textSize="18sp"
                         tools:layout_editor_absoluteX="100dp"
                         tools:layout_editor_absoluteY="332dp" />
