@@ -112,7 +112,6 @@ public class Map extends Fragment implements OnMapReadyCallback {
         map.addMarker(new MarkerOptions().position(new LatLng(43.951283, -78.905099)).title("New Innovation Park Development Blocks").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
         map.addMarker(new MarkerOptions().position(new LatLng(43.952704, -78.902706)).title("New Development Block").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
         map.addMarker(new MarkerOptions().position(new LatLng(43.945462, -78.899820)).title("ACE Additional Facilities (Moving Ground Plane)").icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
-
         map.setMapType(GoogleMap.MAP_TYPE_HYBRID);
         map.setTrafficEnabled(true);
         map.moveCamera(CameraUpdateFactory.newLatLngZoom((uoitLocation),16));
