@@ -144,6 +144,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
+        videoview.seekTo(50);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
@@ -166,6 +167,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Uri uri = Uri.parse(videoPath);
         videoview.setVideoURI(uri);
         videoview.start();
+
     }
 
     public void launchBYOC (View y){
