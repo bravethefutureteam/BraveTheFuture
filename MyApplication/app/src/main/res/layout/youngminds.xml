@@ -28,10 +28,11 @@
                     android:id="@+id/text7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="125dp"
+                    android:fontFamily="@font/franklin_gothic_medium"
                     android:text="Young, Entrepreneurial Minds"
-                    android:textSize="32sp"
                     android:textAlignment="center"
-                    android:layout_marginTop="125dp"/>
+                    android:textSize="32sp" />
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -54,8 +55,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/franklin_gothic_book_regular"
                         android:padding="10dp"
                         android:text="Woman In Engineering. So brilliant that they even brought us:"
+                        android:textAlignment="center"
                         android:textSize="18sp"
                         tools:layout_editor_absoluteX="100dp"
                         tools:layout_editor_absoluteY="332dp" />
@@ -71,9 +74,11 @@
                         android:id="@+id/text9"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="1"
                         android:layout_marginLeft="28dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/franklin_gothic_book_regular"
                         android:text="Brave The Future with Engineers without Borders coming in 2019!"
+                        android:textAlignment="center"
                         android:textSize="18sp"
                         tools:layout_editor_absoluteX="100dp"
                         tools:layout_editor_absoluteY="332dp" />
@@ -113,8 +118,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/franklin_gothic_book_regular"
                         android:padding="10dp"
                         android:text="Student Assistance for Mental Instability. Brave The Future by taking charge and help your peers succeed alongside you"
+                        android:textAlignment="center"
                         android:textSize="18sp"
                         tools:layout_editor_absoluteX="100dp"
                         tools:layout_editor_absoluteY="332dp" />
@@ -131,8 +138,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/franklin_gothic_book_regular"
                         android:padding="10dp"
                         android:text="Looking to transfer from UOIT to Durham or Durham to UOIT? Brave The Future with our bridge programs!"
+                        android:textAlignment="center"
                         android:textSize="18sp"
                         tools:layout_editor_absoluteX="100dp"
                         tools:layout_editor_absoluteY="332dp" />
@@ -161,8 +170,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/franklin_gothic_book_regular"
                         android:padding="10dp"
                         android:text="Looking to transfer from UOIT to Durham or Durham to UOIT? Brave The Future with our bridge programs!"
+                        android:textAlignment="center"
                         android:textSize="18sp"
                         tools:layout_editor_absoluteX="100dp"
                         tools:layout_editor_absoluteY="332dp" />
