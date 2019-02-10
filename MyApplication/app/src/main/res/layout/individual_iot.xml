@@ -11,22 +11,20 @@
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="640dp"
         android:background="#ffffff">
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="288dp"
-            android:layout_height="202dp"
+            android:layout_width="271dp"
+            android:layout_height="151dp"
             android:layout_marginStart="63dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="5dp"
             android:layout_marginEnd="63dp"
-            android:layout_marginBottom="14dp"
-            app:layout_constraintBottom_toTopOf="@+id/textView3"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2"
-            app:srcCompat="@drawable/su" />
+            app:srcCompat="@drawable/iot" />
 
         <TextView
             android:id="@+id/textView2"
@@ -35,12 +33,11 @@
             android:layout_marginStart="90dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="90dp"
-            android:layout_marginBottom="12dp"
-            android:text="Student Union"
+            android:fontFamily="@font/franklin_gothic_medium"
+            android:text="Internet of Things Expert Centre"
             android:textAlignment="center"
             android:textSize="30sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/imageView2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -48,13 +45,13 @@
         <TextView
             android:id="@+id/textView3"
             android:layout_width="339dp"
-            android:layout_height="324dp"
+            android:layout_height="336dp"
             android:layout_marginStart="35dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="12dp"
             android:layout_marginEnd="35dp"
-            android:text="University of Ontario Institute of Technology Student Union (UOIT SU) exists to enhance the student experience. We are an advanced learning organization which encourages equality and equity, while providing essential services for the students of UOIT."
-            android:textSize="24sp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:fontFamily="@font/franklin_gothic_book_regular"
+            android:text="To keep pace with today's ever-changing news cycle, our enhanced Expert Centre is your source to discover the university’s diverse collection of faculty expertise and thought leadership. The expert profiles feature rich multimedia content, detailed biographies and trending topic tags that will help you find an expert to provide analysis, commentary and insight on today's most engaging industry trends and developments."
+            android:textSize="22sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView2" />

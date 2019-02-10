@@ -30,7 +30,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="125dp"
                     android:fontFamily="@font/franklin_gothic_medium"
-                    android:text="High Tech Facilities to help YOU Brave the Future"
+                    android:text="One-of-a-kind Research"
                     android:textAlignment="center"
                     android:textSize="32sp" />
 
@@ -40,13 +40,13 @@
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:id="@+id/nav_motorsports"
+                        android:id="@+id/nav_ri3d"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
-                        android:onClick="switchScreen"
                         android:scaleType="fitCenter"
                         android:src="@drawable/tele"
+                        android:onClick="switchScreen"
                         tools:layout_editor_absoluteX="200dp"
                         tools:layout_editor_absoluteY="0dp" />
 
@@ -57,7 +57,7 @@
                         android:layout_weight="1"
                         android:fontFamily="@font/franklin_gothic_book_regular"
                         android:padding="10dp"
-                        android:text="Brave the Future with leading edge facilities for Engineering, Forensic Science, Nuclear Engineering, and MORE!"
+                        android:text="RI3D-- Learn how to build and compete your own Robot!"
                         android:textAlignment="center"
                         android:textSize="18sp"
                         tools:layout_editor_absoluteX="100dp"
@@ -71,7 +71,7 @@
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:id="@+id/nav_tele"
+                        android:id="@+id/nav_research"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
@@ -83,12 +83,12 @@
 
                     <TextView
                         android:id="@+id/text9"
-                        android:layout_width="315dp"
-                        android:layout_height="match_parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_marginLeft="28dp"
                         android:layout_weight="1"
                         android:fontFamily="@font/franklin_gothic_book_regular"
-                        android:text="Visit the library for a fantastic place to sit and study, and 3D print to your heart's extent!"
+                        android:text="Professional Research done by Professors at UOIT"
                         android:textAlignment="center"
                         android:textSize="18sp"
                         tools:layout_editor_absoluteX="100dp"
@@ -102,44 +102,13 @@
                     android:orientation="horizontal">
 
                     <ImageButton
-                        android:id="@+id/nav_library"
+                        android:id="@+id/nav_iot"
                         android:layout_width="150dp"
                         android:layout_height="150dp"
                         android:layout_marginLeft="25dp"
-                        android:onClick="switchScreen"
                         android:scaleType="fitCenter"
                         android:src="@drawable/cad"
-                        tools:layout_editor_absoluteX="0dp"
-                        tools:layout_editor_absoluteY="374dp" />
-
-
-                    <TextView
-                        android:id="@+id/text11"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/franklin_gothic_book_regular"
-                        android:padding="10dp"
-                        android:text="Brave the electric Future with Motorsports! Build a car from scratch!"
-                        android:textAlignment="center"
-                        android:textSize="18sp"
-                        tools:layout_editor_absoluteX="100dp"
-                        tools:layout_editor_absoluteY="332dp" />
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <ImageButton
-                        android:id="@+id/nav_forensic"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_marginLeft="25dp"
                         android:onClick="switchScreen"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/cad"
                         tools:layout_editor_absoluteX="0dp"
                         tools:layout_editor_absoluteY="374dp" />
 
@@ -149,74 +118,16 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:fontFamily="@font/franklin_gothic_book_regular"
                         android:padding="10dp"
-                        android:text="Brave the electric Future with Motorsports! Build a car from scratch!"
+                        android:text="Dive into the Internet of Things and BraveTheFuture!"
                         android:textAlignment="center"
                         android:textSize="18sp"
                         tools:layout_editor_absoluteX="100dp"
                         tools:layout_editor_absoluteY="332dp" />
 
                 </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
 
-                    <ImageButton
-                        android:id="@+id/nav_nuclear"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_marginLeft="25dp"
-                        android:onClick="switchScreen"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/cad"
-                        tools:layout_editor_absoluteX="0dp"
-                        tools:layout_editor_absoluteY="374dp" />
-
-
-                    <TextView
-                        android:id="@+id/text12"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:padding="10dp"
-                        android:text="Brave the electric Future with Motorsports! Build a car from scratch!"
-                        android:textAlignment="center"
-                        android:textSize="18sp"
-                        tools:layout_editor_absoluteX="100dp"
-                        tools:layout_editor_absoluteY="332dp" />
-
-                </LinearLayout>
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <ImageButton
-                        android:id="@+id/nav_ace"
-                        android:layout_width="150dp"
-                        android:layout_height="150dp"
-                        android:layout_marginLeft="25dp"
-                        android:onClick="switchScreen"
-                        android:scaleType="fitCenter"
-                        android:src="@drawable/cad"
-                        tools:layout_editor_absoluteX="0dp"
-                        tools:layout_editor_absoluteY="374dp" />
-
-
-                    <TextView
-                        android:id="@+id/text13"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:padding="10dp"
-                        android:text="Brave the electric Future with Motorsports! Build a car from scratch!"
-                        android:textAlignment="center"
-                        android:textSize="18sp"
-                        tools:layout_editor_absoluteX="100dp"
-                        tools:layout_editor_absoluteY="332dp" />
-
-                </LinearLayout>
 
             </LinearLayout>
 

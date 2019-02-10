@@ -20,7 +20,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintVertical_chainStyle="spread"
         app:srcCompat="@drawable/btf_logo_main"
         tools:srcCompat="@drawable/btf_logo_main" />
 
@@ -30,7 +30,6 @@
         android:layout_height="42dp"
         android:layout_marginStart="25dp"
         android:layout_marginEnd="26dp"
-        android:layout_marginBottom="10dp"
         android:text="Welcome to the Brave the Future App!"
         android:textSize="20sp"
         app:fontFamily="@font/franklin_gothic_medium"
@@ -42,10 +41,9 @@
     <VideoView
         android:id="@+id/videoview"
         android:layout_width="375dp"
-        android:layout_height="218dp"
+        android:layout_height="210dp"
         android:layout_marginStart="19dp"
         android:layout_marginEnd="18dp"
-        android:layout_marginBottom="30dp"
         app:layout_constraintBottom_toTopOf="@+id/playButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -68,12 +66,11 @@
 
     <TextView
         android:id="@+id/textView9"
-        android:layout_width="358dp"
+        android:layout_width="389dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"
-        android:layout_marginTop="10dp"
         android:layout_marginEnd="27dp"
-        android:text="Swipe from the left or press the menu button in the top left corner to explore our university"
+        android:text="@string/btf"
         android:textAlignment="center"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"

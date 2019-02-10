@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorPrimary"
+    android:gravity="bottom"
+    android:orientation="vertical">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="640dp"
+        android:background="#ffffff">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="90dp"
+                    android:fontFamily="@font/franklin_gothic_medium"
+                    android:text="Software and Informatics Research Centre (SIRC)"
+                    android:textAlignment="center"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="160dp"
+                    android:layout_marginStart="63dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="63dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2"
+                    app:srcCompat="@drawable/sirc" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="367dp"
+                    android:layout_height="392dp"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="35dp"
+                    android:fontFamily="@font/franklin_gothic_book_regular"
+                    android:text="The Software and Informatics Research Centre (SIRC) accommodates the university’s need for new spaces for research, study and future active learning. Flexible learning spaces featuring multiple seating configurations, room divisibility and the newest audio-visual technology. Approximately 280 square metres of student study space. Engineering labs in electronics, mechatronics, and robotics as well as a design/makerspace featuring 3D printers, and soldering and electronics stations."
+                    android:textSize="22sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+            </LinearLayout>
+        </ScrollView>
+
+    </android.support.constraint.ConstraintLayout>
+</LinearLayout>
