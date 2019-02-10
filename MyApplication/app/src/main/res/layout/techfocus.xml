@@ -111,7 +111,7 @@
 
 
                     <TextView
-                        android:id="@+id/text10"
+                        android:id="@+id/text11"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -171,7 +171,7 @@
 
 
                     <TextView
-                        android:id="@+id/text10"
+                        android:id="@+id/text12"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
@@ -201,7 +201,7 @@
 
 
                     <TextView
-                        android:id="@+id/text10"
+                        android:id="@+id/text13"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
