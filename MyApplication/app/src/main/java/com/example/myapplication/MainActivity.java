@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 //break;
             case R.id.nav_software:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new VirtualTourAce()).commit();
-                history.push(R.layout.individual_soft);
+                //history.push(R.layout.individual_soft);
                 break;
 
             case R.id.nav_tele:
