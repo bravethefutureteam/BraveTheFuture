@@ -19,7 +19,7 @@
             android:layout_marginTop="17dp"
             android:onClick="switchScreen"
             android:scaleType="fitCenter"
-            android:src="@drawable/cad"
+            android:src="@drawable/iot"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/divider5" />
 
@@ -61,7 +61,7 @@
             android:layout_marginTop="15dp"
             android:onClick="switchScreen"
             android:scaleType="center"
-            android:src="@drawable/moneylab"
+            android:src="@drawable/lab"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/divider4" />
 
@@ -89,7 +89,7 @@
             android:layout_marginTop="15dp"
             android:onClick="switchScreen"
             android:scaleType="fitCenter"
-            android:src="@drawable/tele"
+            android:src="@drawable/ri3d"
             app:layout_constraintEnd_toStartOf="@+id/text8"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/text7" />

@@ -30,7 +30,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="125dp"
                     android:fontFamily="@font/franklin_gothic_medium"
-                    android:text="High Tech Facilities to help YOU Brave the Future"
+                    android:text="High Tech Facilities and Oppurtunities to help YOU Brave the Future"
                     android:textAlignment="center"
                     android:textSize="32sp" />
 
@@ -52,12 +52,12 @@
 
                     <TextView
                         android:id="@+id/text8"
-                        android:layout_width="match_parent"
+                        android:layout_width="239dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:fontFamily="@font/franklin_gothic_book_regular"
                         android:padding="10dp"
-                        android:text="Brave the Future with leading edge facilities for Engineering, Forensic Science, Nuclear Engineering, and MORE!"
+                        android:text="Brave the electric Future with Motorsports! Build a car from scratch!"
                         android:textAlignment="center"
                         android:textSize="18sp"
                         tools:layout_editor_absoluteX="100dp"
@@ -83,12 +83,12 @@
 
                     <TextView
                         android:id="@+id/text14"
-                        android:layout_width="315dp"
+                        android:layout_width="301dp"
                         android:layout_height="match_parent"
                         android:layout_marginLeft="28dp"
                         android:layout_weight="1"
                         android:fontFamily="@font/franklin_gothic_book_regular"
-                        android:text="Visit the library for a fantastic place to sit and study, and 3D print to your heart's extent!"
+                        android:text="Visit Polonsky Commons, a beautiful green space on our North Campus!"
                         android:textAlignment="center"
                         android:textSize="18sp"
                         tools:layout_editor_absoluteX="100dp"
@@ -119,11 +119,11 @@
                         android:layout_marginLeft="28dp"
                         android:layout_weight="1"
                         android:fontFamily="@font/franklin_gothic_book_regular"
-                        android:text="Visit the library for a fantastic place to sit and study, and 3D print to your heart's extent!"
                         android:textAlignment="center"
                         android:textSize="18sp"
                         tools:layout_editor_absoluteX="100dp"
-                        tools:layout_editor_absoluteY="332dp" />
+                        tools:layout_editor_absoluteY="332dp"
+                        tools:text="Learn more about our Technology Enriched Learning Enviornment (TELE) and what we offer to help students succeed!" />
 
                 </LinearLayout>
 
@@ -151,7 +151,7 @@
                         android:layout_weight="1"
                         android:fontFamily="@font/franklin_gothic_book_regular"
                         android:padding="10dp"
-                        android:text="Brave the electric Future with Motorsports! Build a car from scratch!"
+                        android:text="Visit the library for a fantastic place to sit and study, and 3D print to your heart's extent!"
                         android:textAlignment="center"
                         android:textSize="18sp"
                         tools:layout_editor_absoluteX="100dp"
@@ -181,7 +181,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="10dp"
-                        android:text="Brave the electric Future with Motorsports! Build a car from scratch!"
+                        android:text="Visit our one of a kind Crime Scene House! Perfect for practical situations and experience"
                         android:textAlignment="center"
                         android:textSize="18sp"
                         tools:layout_editor_absoluteX="100dp"
@@ -211,7 +211,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="10dp"
-                        android:text="Brave the electric Future with Motorsports! Build a car from scratch!"
+                        android:text="Brave the Future with leading edge facilities for Nuclear Engineering!"
                         android:textAlignment="center"
                         android:textSize="18sp"
                         tools:layout_editor_absoluteX="100dp"
@@ -241,11 +241,11 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:padding="10dp"
-                        android:text="Brave the electric Future with Motorsports! Build a car from scratch!"
                         android:textAlignment="center"
                         android:textSize="18sp"
                         tools:layout_editor_absoluteX="100dp"
-                        tools:layout_editor_absoluteY="332dp" />
+                        tools:layout_editor_absoluteY="332dp"
+                        tools:text="Brave the Future with our revolutionary ACE building!" />
 
                 </LinearLayout>
 
