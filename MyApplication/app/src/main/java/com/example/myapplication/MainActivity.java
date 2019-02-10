@@ -232,7 +232,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 history.push(f);
                 break;
             case R.id.nav_Survey:
-                f = new basicFragment(R.layout.individual_survey);
+                f = new VirtualTourSurvey();
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,f).commit();
                 history.push(f);
                 break;
